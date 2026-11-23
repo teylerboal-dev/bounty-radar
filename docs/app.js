@@ -160,4 +160,21 @@ els.exportBtn.addEventListener('click', () => {
 	URL.revokeObjectURL(a.href);
 });
 
-runScan();
+async function loadPrebakedFeed() {
+	try {
+		const res = await fetch('./feed.json', { cache: 'no-store' });
+		if (!res.ok) return false;
+		const feed = await res.json();
+		if (!Array.isArray(feed.results) || feed.results.length === 0) return false;
+		const updated = feed.generatedAt ? new Date(feed.generatedAt).toLocaleString() : 'recently';
+		els.statusBar.textContent = `Loaded 24/7 cloud snapshot (${updated}) · ${feed.results.length} clean bounties (blocked ${feed.honeypotsBlocked} honeypots). Click "Scan Live Bounties" for custom filters.`;
+		renderResults(feed);
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+loadPrebakedFeed().then((loaded) => {
+	if (!loaded) runScan();
+});
