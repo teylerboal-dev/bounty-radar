@@ -1,0 +1,23 @@
+{
+  "name": "bounty-radar",
+  "version": "1.0.0",
+  "description": "Real-time GitHub open-source bounty scanner with anti-honeypot filtering and winnability scoring for humans & AI agents.",
+  "type": "module",
+  "bin": {
+    "bounty-radar": "./bin/bounty-radar.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "scan": "node bin/bounty-radar.mjs"
+  },
+  "keywords": [
+    "github",
+    "bounty",
+    "open-source",
+    "algora",
+    "opire",
+    "cli",
+    "ai-agent"
+  ],
+  "license": "MIT"
+}

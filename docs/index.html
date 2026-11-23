@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BountyRadar — Filter Honeypots. Find Winnable GitHub Bounties.</title>
+		<meta
+			name="description"
+			content="Real-time GitHub open-source bounty scanner with anti-honeypot filtering, competition checks, and winnability scoring for developers and AI agents."
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="shell">
+			<header class="topbar">
+				<div class="brand">
+					<span class="dot"></span>
+					<span class="brand-name">BountyRadar</span>
+					<span class="badge">LIVE</span>
+				</div>
+				<nav class="nav-links">
+					<a href="#scanner">Live Scanner</a>
+					<a href="#cli">CLI &amp; Agents</a>
+					<a href="#pricing">Pro Alerts</a>
+					<a
+						href="https://github.com/teylerboal-dev/bounty-radar"
+						target="_blank"
+						rel="noreferrer"
+						class="gh-btn"
+						>GitHub ↗</a
+					>
+				</nav>
+			</header>
+
+			<section class="hero">
+				<div class="pill">Built for Human Hunters &amp; Autonomous Coding Agents</div>
+				<h1>Stop wasting hours on fake &amp; crowded GitHub bounties.</h1>
+				<p class="subtitle">
+					80% of <code>label:bounty</code> results are synthetic benchmark spam, assigned issues, or
+					200-comment dogpiles. BountyRadar scans live GitHub issues, blocks known honeypots, parses
+					USD/USDC/ZEC/XTR payouts, and ranks every issue by real winnability.
+				</p>
+			</section>
+
+			<section id="scanner" class="panel">
+				<div class="controls">
+					<div class="control-group">
+						<label for="preset">Source Preset</label>
+						<select id="preset">
+							<option value="label:bounty">General Bounties (label:bounty)</option>
+							<option value="bounty USDC">USDC Crypto Bounties</option>
+							<option value='"algora.io" bounty'>Algora Bounties</option>
+							<option value='"opire.dev"'>Opire Bounties</option>
+							<option value="ZecHub bounty">ZecHub (ZEC) Bounties</option>
+						</select>
+					</div>
+
+					<div class="control-group">
+						<label for="lang">Language</label>
+						<select id="lang">
+							<option value="">Any Language</option>
+							<option value="typescript">TypeScript</option>
+							<option value="javascript">JavaScript</option>
+							<option value="python">Python</option>
+							<option value="rust">Rust</option>
+							<option value="go">Go</option>
+							<option value="solidity">Solidity</option>
+						</select>
+					</div>
+
+					<div class="control-group">
+						<label for="maxComments">Max Comments</label>
+						<select id="maxComments">
+							<option value="0">0 (Zero Competition)</option>
+							<option value="3">≤ 3 Comments</option>
+							<option value="6" selected>≤ 6 Comments</option>
+							<option value="15">≤ 15 Comments</option>
+							<option value="50">≤ 50 Comments</option>
+						</select>
+					</div>
+
+					<div class="control-group">
+						<label for="minUsd">Min Est. USD</label>
+						<select id="minUsd">
+							<option value="0" selected>Any Reward</option>
+							<option value="25">$25+</option>
+							<option value="100">$100+</option>
+							<option value="250">$250+</option>
+							<option value="500">$500+</option>
+						</select>
+					</div>
+
+					<div class="control-group token-group">
+						<label for="token">GitHub Token (Optional, local only)</label>
+						<input
+							id="token"
+							type="password"
+							placeholder="ghp_... (unlocks 5,000 req/hr)"
+							autocomplete="off"
+						/>
+					</div>
+
+					<div class="control-actions">
+						<label class="checkbox-label">
+							<input id="hideHoneypots" type="checkbox" checked />
+							<span>Block Honeypots</span>
+						</label>
+						<button id="scanBtn" class="btn-primary">Scan Live Bounties</button>
+						<button id="exportBtn" class="btn-secondary" title="Export current results as JSON">
+							Export JSON
+						</button>
+					</div>
+				</div>
+
+				<div class="stats-bar">
+					<div class="stat">
+						<span class="stat-label">Issues Scanned</span>
+						<span id="statScanned" class="stat-value">—</span>
+					</div>
+					<div class="stat">
+						<span class="stat-label">Honeypots Blocked</span>
+						<span id="statBlocked" class="stat-value stat-warn">—</span>
+					</div>
+					<div class="stat">
+						<span class="stat-label">Clean Matches</span>
+						<span id="statClean" class="stat-value stat-ok">—</span>
+					</div>
+					<div class="stat">
+						<span class="stat-label">Est. Visible Pool</span>
+						<span id="statPool" class="stat-value stat-accent">—</span>
+					</div>
+				</div>
+
+				<div id="statusBar" class="status-bar">Ready. Click "Scan Live Bounties" to query GitHub.</div>
+				<div id="results" class="results-grid"></div>
+			</section>
+
+			<section id="cli" class="panel cli-section">
+				<h2>Built for Autonomous Agents &amp; Terminal Workflows</h2>
+				<p class="muted">
+					Pipe clean, honeypot-free bounty JSON directly into your coding agent or CI workflow.
+				</p>
+				<pre><code>git clone https://github.com/teylerboal-dev/bounty-radar.git
+cd bounty-radar
+node bin/bounty-radar.mjs --lang typescript --min-usd 100 --max-comments 3 --json</code></pre>
+			</section>
+
+			<section id="pricing" class="pricing-grid">
+				<div class="price-card">
+					<h3>Open Source (Free)</h3>
+					<div class="price">$0<span> / forever</span></div>
+					<ul>
+						<li>Live browser scanner + GitHub API</li>
+						<li>Built-in synthetic/honeypot org blocklist</li>
+						<li>Winnability score (0–100) &amp; reward parser</li>
+						<li>Open-source Node CLI (<code>--json</code>)</li>
+					</ul>
+					<a href="#scanner" class="btn-secondary full-width">Use Now</a>
+				</div>
+
+				<div class="price-card featured">
+					<div class="tier-tag">FOR SERIOUS HUNTERS &amp; AGENT FLEETS</div>
+					<h3>BountyRadar Pro</h3>
+					<div class="price">$19<span> / month</span></div>
+					<ul>
+						<li>Instant Discord / Webhook alerts for $100+ 0-PR bounties</li>
+						<li>Deep linked-PR competition verification across all repos</li>
+						<li>Daily updated honeypot &amp; dead-maintainer blocklist</li>
+						<li>Unlimited CSV / JSON API feeds for autonomous agents</li>
+					</ul>
+					<a
+						href="https://github.com/teylerboal-dev/bounty-radar/issues/new?title=BountyRadar%20Pro%20Access%20Request&body=Hi!%20I%27d%20like%20early%20access%20to%20BountyRadar%20Pro%20alerts%20%26%20API%20feeds."
+						target="_blank"
+						rel="noreferrer"
+						class="btn-primary full-width"
+						>Request Pro Access ↗</a
+					>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<span>BountyRadar · Zero-backend GitHub Bounty Intelligence</span>
+				<span>Tokens stay strictly in your browser's localStorage.</span>
+			</footer>
+		</div>
+
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
