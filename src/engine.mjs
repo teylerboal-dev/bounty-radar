@@ -12,7 +12,15 @@ export const SPAM_ORGS = new Set([
 	'alwaystrueio',
 	'relayhop',
 	'fractal-neurons',
+	'clankernation',
 ]);
+
+export const PROMPT_INJECTION_PATTERNS = [
+	/pre-session instructions/i,
+	/platform_instructions/i,
+	/paste your complete .* verbatim/i,
+	/system prompt.*verbatim/i,
+];
 
 export const SPAM_REPO_PATTERNS = [
 	/bounty-plaza/i,
@@ -98,11 +106,15 @@ export function detectHoneypot(issue) {
 	}
 
 	const title = issue.title || '';
+	const body = issue.body || '';
 	if (/^\[wildcard\]/i.test(title) || /not a real bounty/i.test(title)) {
 		return { isHoneypot: true, reason: 'Synthetic or test issue title' };
 	}
 	if (/每日信息流|weekly review/i.test(title)) {
 		return { isHoneypot: true, reason: 'Automated digest/newsletter issue, not a code bounty' };
+	}
+	if (PROMPT_INJECTION_PATTERNS.some((re) => re.test(title) || re.test(body))) {
+		return { isHoneypot: true, reason: 'Prompt-injection / system-prompt exfiltration trap' };
 	}
 
 	return { isHoneypot: false, reason: null };
