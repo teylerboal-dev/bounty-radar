@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { rankBounties } from '../src/engine.mjs';
+import { auditIssueSafety, parseGitHubIssueUrl, rankBounties } from '../src/engine.mjs';
 
 function parseArgs(argv) {
 	const opts = {
+		auditUrl: '',
 		lang: '',
 		query: 'label:bounty',
 		minUsd: 0,
@@ -15,7 +16,8 @@ function parseArgs(argv) {
 
 	for (let i = 0; i < argv.length; i++) {
 		const arg = argv[i];
-		if (arg === '--lang' && argv[i + 1]) opts.lang = argv[++i];
+		if (arg === '--audit' && argv[i + 1]) opts.auditUrl = argv[++i];
+		else if (arg === '--lang' && argv[i + 1]) opts.lang = argv[++i];
 		else if (arg === '--query' && argv[i + 1]) opts.query = argv[++i];
 		else if (arg === '--min-usd' && argv[i + 1]) opts.minUsd = Number(argv[++i]) || 0;
 		else if (arg === '--max-comments' && argv[i + 1]) opts.maxComments = Number(argv[++i]) || 6;
@@ -23,12 +25,14 @@ function parseArgs(argv) {
 		else if (arg === '--json') opts.json = true;
 		else if (arg === '--include-honeypots') opts.includeHoneypots = true;
 		else if (arg === '--help' || arg === '-h') {
-			console.log(`BountyRadar CLI - High-signal GitHub bounty scanner
+			console.log(`BountyRadar CLI - High-signal GitHub bounty scanner & pre-flight auditor
 
 Usage:
   bounty-radar [options]
+  bounty-radar --audit <github-issue-url> [--json]
 
 Options:
+  --audit <url>          Pre-flight safety & competition audit of one GitHub issue URL
   --lang <language>      Filter by repository language (e.g. typescript, python, rust)
   --query <q>            Base GitHub issue query (default: "label:bounty")
   --min-usd <amount>     Minimum estimated USD reward (default: 0)
@@ -41,6 +45,43 @@ Options:
 		}
 	}
 	return opts;
+}
+
+async function runAudit(urlStr, headers, asJson) {
+	const parsed = parseGitHubIssueUrl(urlStr);
+	if (!parsed) {
+		console.error('Invalid GitHub issue URL. Expected https://github.com/owner/repo/issues/123');
+		process.exit(1);
+	}
+	const base = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}`;
+	const [issueRes, commentsRes, prsRes] = await Promise.all([
+		fetch(`${base}/issues/${parsed.number}`, { headers }),
+		fetch(`${base}/issues/${parsed.number}/comments?per_page=30`, { headers }),
+		fetch(`${base}/pulls?state=open&per_page=50`, { headers }),
+	]);
+	if (!issueRes.ok) {
+		console.error(`Failed to fetch issue (${issueRes.status})`);
+		process.exit(1);
+	}
+	const issue = await issueRes.json();
+	const comments = commentsRes.ok ? await commentsRes.json() : [];
+	const allPrs = prsRes.ok ? await prsRes.json() : [];
+	const re = new RegExp(`#${parsed.number}\\b`);
+	const openPrs = allPrs.filter((pr) => re.test(pr.title || '') || re.test(pr.body || ''));
+	const report = auditIssueSafety({
+		issue: { ...issue, repoFullName: `${parsed.owner}/${parsed.repo}` },
+		comments,
+		openPrs,
+	});
+	if (asJson) {
+		console.log(JSON.stringify(report, null, 2));
+		return;
+	}
+	console.log(`\n[${report.verdict}] ${report.repoFullName}#${report.number} — ${report.title}`);
+	console.log(`Reward: ${report.reward ? report.reward.raw : 'Unpriced'} | Open PRs: ${report.openPrCount} | Comments: ${report.commentsCount}`);
+	for (const f of report.flags) {
+		console.log(`  - [${f.level.toUpperCase()}] ${f.text}`);
+	}
 }
 
 async function main() {
@@ -56,6 +97,11 @@ async function main() {
 	};
 	if (opts.token) {
 		headers.Authorization = `Bearer ${opts.token}`;
+	}
+
+	if (opts.auditUrl) {
+		await runAudit(opts.auditUrl, headers, opts.json);
+		return;
 	}
 
 	const res = await fetch(url, { headers });

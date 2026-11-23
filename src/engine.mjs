@@ -22,6 +22,101 @@ export const PROMPT_INJECTION_PATTERNS = [
 	/system prompt.*verbatim/i,
 ];
 
+export const CANCELED_BOUNTY_PATTERNS = [
+	/stopped the bounty program/i,
+	/payouts won'?t work/i,
+	/bounty program (?:is |has been )?(?:ended|closed|paused|canceled|cancelled|discontinued)/i,
+	/no longer (?:paying|offering) bount/i,
+];
+
+export const AI_RESTRICTED_PATTERNS = [
+	/not to solely use llm/i,
+	/do not start working on this without talking to the maintainers/i,
+	/no ai[- ]generated prs?/i,
+	/do not submit ai[- ]generated/i,
+];
+
+/**
+ * Parse a GitHub issue URL into { owner, repo, number } or null.
+ */
+export function parseGitHubIssueUrl(input = '') {
+	const m = String(input)
+		.trim()
+		.match(/^https?:\/\/github\.com\/([^/\s]+)\/([^/\s]+)\/issues\/(\d+)(?:[/?#].*)?$/i);
+	if (!m) return null;
+	return { owner: m[1], repo: m[2], number: Number(m[3]) };
+}
+
+/**
+ * Deep pre-flight safety & competition audit for a single GitHub bounty issue.
+ * Checks honeypots, prompt-injection traps, canceled programs, anti-AI rules,
+ * assignees, and competing open PRs.
+ */
+export function auditIssueSafety({ issue, comments = [], openPrs = [], nowMs = Date.now() }) {
+	const scored = scoreBounty(issue, nowMs);
+	const allCommentsText = comments.map((c) => c.body || '').join('\n');
+	const fullText = `${issue.title || ''}\n${issue.body || ''}\n${allCommentsText}`;
+
+	const flags = [];
+	let verdict = 'GO';
+
+	if (scored.isHoneypot) {
+		verdict = 'DANGER';
+		flags.push({ level: 'danger', text: scored.honeypotReason || 'Honeypot / synthetic trap' });
+	}
+	if (PROMPT_INJECTION_PATTERNS.some((re) => re.test(fullText))) {
+		verdict = 'DANGER';
+		flags.push({
+			level: 'danger',
+			text: 'Prompt-injection / system-prompt exfiltration trap detected in issue or comments',
+		});
+	}
+	if (CANCELED_BOUNTY_PATTERNS.some((re) => re.test(fullText))) {
+		if (verdict !== 'DANGER') verdict = 'SKIP';
+		flags.push({
+			level: 'warn',
+			text: 'Maintainer comments indicate this bounty program was stopped or payouts are disabled',
+		});
+	}
+	if (AI_RESTRICTED_PATTERNS.some((re) => re.test(fullText))) {
+		if (verdict === 'GO') verdict = 'RESTRICTED';
+		flags.push({
+			level: 'warn',
+			text: 'Maintainer requires pre-approval or restricts LLM/AI-generated submissions',
+		});
+	}
+	if (scored.hasAssignee) {
+		if (verdict === 'GO') verdict = 'CROWDED';
+		flags.push({ level: 'warn', text: 'Issue is already assigned to another contributor' });
+	}
+	if (openPrs.length > 0) {
+		if (verdict === 'GO') verdict = 'CROWDED';
+		flags.push({
+			level: 'warn',
+			text: `${openPrs.length} competing open PR(s) already reference this issue`,
+		});
+	}
+	if (flags.length === 0) {
+		flags.push({
+			level: 'ok',
+			text: 'Clean: unassigned, 0 competing open PRs, no honeypot or policy blockers detected',
+		});
+	}
+
+	return {
+		verdict,
+		winnabilityScore: verdict === 'GO' ? scored.winnabilityScore : Math.min(scored.winnabilityScore, 25),
+		reward: scored.reward,
+		repoFullName: scored.repoFullName,
+		number: scored.number,
+		title: scored.title,
+		url: scored.url,
+		openPrCount: openPrs.length,
+		commentsCount: comments.length || scored.comments,
+		flags,
+	};
+}
+
 export const SPAM_REPO_PATTERNS = [
 	/bounty-plaza/i,
 	/devx-bounties/i,

@@ -1,4 +1,4 @@
-import { rankBounties } from './engine.mjs';
+import { auditIssueSafety, parseGitHubIssueUrl, rankBounties } from './engine.mjs';
 
 const els = {
 	preset: document.getElementById('preset'),
@@ -174,6 +174,73 @@ async function loadPrebakedFeed() {
 		return false;
 	}
 }
+
+const auditUrlInput = document.getElementById('auditUrl');
+const auditBtn = document.getElementById('auditBtn');
+const auditResult = document.getElementById('auditResult');
+
+async function runAuditUrl(rawUrl) {
+	const parsed = parseGitHubIssueUrl(rawUrl);
+	if (!parsed) {
+		auditResult.innerHTML =
+			'<div class="audit-box warn">Invalid URL. Paste a GitHub issue link like <code>https://github.com/owner/repo/issues/123</code>.</div>';
+		return;
+	}
+	auditBtn.disabled = true;
+	auditResult.innerHTML = '<div class="status-bar" style="margin-top:12px">Auditing issue, comments &amp; open PRs...</div>';
+	const headers = { Accept: 'application/vnd.github+json' };
+	const token = els.token.value.trim();
+	if (token) headers.Authorization = `Bearer ${token}`;
+
+	const base = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}`;
+	try {
+		const [issueRes, commentsRes, prsRes] = await Promise.all([
+			fetch(`${base}/issues/${parsed.number}`, { headers }),
+			fetch(`${base}/issues/${parsed.number}/comments?per_page=30`, { headers }),
+			fetch(`${base}/pulls?state=open&per_page=50`, { headers }),
+		]);
+		if (!issueRes.ok) {
+			auditResult.innerHTML = `<div class="audit-box warn">GitHub API error (${issueRes.status}). Add a token below if rate-limited.</div>`;
+			return;
+		}
+		const issue = await issueRes.json();
+		const comments = commentsRes.ok ? await commentsRes.json() : [];
+		const allPrs = prsRes.ok ? await prsRes.json() : [];
+		const re = new RegExp(`#${parsed.number}\\b`);
+		const openPrs = allPrs.filter((pr) => re.test(pr.title || '') || re.test(pr.body || ''));
+		const report = auditIssueSafety({
+			issue: { ...issue, repoFullName: `${parsed.owner}/${parsed.repo}` },
+			comments,
+			openPrs,
+		});
+		const cls = report.verdict === 'GO' ? 'ok' : report.verdict === 'DANGER' ? 'danger' : 'warn';
+		const flagsHtml = report.flags
+			.map((f) => `<li><strong>[${escapeHtml(f.level.toUpperCase())}]</strong> ${escapeHtml(f.text)}</li>`)
+			.join('');
+		auditResult.innerHTML = `
+			<div class="audit-box ${cls}">
+				<div class="audit-head">
+					<span class="verdict-pill ${cls}">${escapeHtml(report.verdict)}</span>
+					<strong>${escapeHtml(report.repoFullName)}#${report.number}</strong>
+					<span class="muted">· ${report.reward ? escapeHtml(report.reward.raw) : 'Unpriced'} · ${report.openPrCount} open PR(s) · ${report.commentsCount} comments</span>
+				</div>
+				<div style="margin:6px 0 8px">${escapeHtml(report.title)}</div>
+				<ul class="audit-flags">${flagsHtml}</ul>
+			</div>`;
+	} catch (err) {
+		auditResult.innerHTML = `<div class="audit-box warn">Network error: ${escapeHtml(err.message)}</div>`;
+	} finally {
+		auditBtn.disabled = false;
+	}
+}
+
+auditBtn.addEventListener('click', () => runAuditUrl(auditUrlInput.value));
+document.querySelectorAll('.demo-audit').forEach((btn) => {
+	btn.addEventListener('click', () => {
+		auditUrlInput.value = btn.dataset.url;
+		runAuditUrl(btn.dataset.url);
+	});
+});
 
 loadPrebakedFeed().then((loaded) => {
 	if (!loaded) runScan();

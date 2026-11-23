@@ -33,13 +33,36 @@
 			</header>
 
 			<section class="hero">
-				<div class="pill">Built for Human Hunters &amp; Autonomous Coding Agents</div>
-				<h1>Stop wasting hours on fake &amp; crowded GitHub bounties.</h1>
+				<div class="pill">Built for Human Hunters &amp; Autonomous Coding Agents · v2.0</div>
+				<h1>Stop wasting hours on fake, canceled &amp; prompt-injection GitHub bounties.</h1>
 				<p class="subtitle">
-					80% of <code>label:bounty</code> results are synthetic benchmark spam, assigned issues, or
-					200-comment dogpiles. BountyRadar scans live GitHub issues, blocks known honeypots, parses
-					USD/USDC/ZEC/XTR payouts, and ranks every issue by real winnability.
+					80% of <code>label:bounty</code> results are synthetic benchmark spam, prompt-injection
+					traps, canceled programs, or 5-PR dogpiles. BountyRadar audits any issue before you write
+					a single line of code.
 				</p>
+			</section>
+
+			<section id="auditor" class="panel">
+				<h2 style="margin: 0 0 6px; font-size: 1.1rem">Pre-Flight Bounty URL Auditor</h2>
+				<p class="muted" style="margin: 0 0 12px; font-size: 0.88rem">
+					Paste any GitHub issue URL to detect prompt-injection traps, canceled bounty programs,
+					no-LLM maintainer bans, and hidden competing open PRs.
+				</p>
+				<div class="audit-row">
+					<input
+						id="auditUrl"
+						type="url"
+						placeholder="https://github.com/owner/repo/issues/123"
+					/>
+					<button id="auditBtn" class="btn-primary">Audit Issue</button>
+				</div>
+				<div class="audit-demos">
+					<span class="muted" style="font-size: 0.78rem">Try real examples:</span>
+					<button class="chip demo-audit" data-url="https://github.com/ClankerNation/OpenAgents/issues/82">Prompt-Injection Trap</button>
+					<button class="chip demo-audit" data-url="https://github.com/coollabsio/coolify/issues/7528">Canceled Program</button>
+					<button class="chip demo-audit" data-url="https://github.com/eigenwallet/core/issues/1250">No-LLM Policy</button>
+				</div>
+				<div id="auditResult"></div>
 			</section>
 
 			<section id="scanner" class="panel">
@@ -138,11 +161,14 @@
 			<section id="cli" class="panel cli-section">
 				<h2>Built for Autonomous Agents &amp; Terminal Workflows</h2>
 				<p class="muted">
-					Pipe clean, honeypot-free bounty JSON directly into your coding agent or CI workflow.
+					Consume the 24/7 zero-rate-limit JSON feed directly, or audit any issue before your agent
+					clones a repo:
 				</p>
-				<pre><code>git clone https://github.com/teylerboal-dev/bounty-radar.git
-cd bounty-radar
-node bin/bounty-radar.mjs --lang typescript --min-usd 100 --max-comments 3 --json</code></pre>
+				<pre><code># 1. Zero-rate-limit 24/7 JSON feed (auto-refreshed every 6h)
+curl -s https://teylerboal-dev.github.io/bounty-radar/feed.json | jq '.results[0:5]'
+
+# 2. Pre-flight safety audit before your agent starts coding
+node bin/bounty-radar.mjs --audit https://github.com/owner/repo/issues/123 --json</code></pre>
 			</section>
 
 			<section id="pricing" class="pricing-grid">
