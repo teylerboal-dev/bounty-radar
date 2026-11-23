@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://teylerboal-dev.github.io/bounty-radar/sitemap.xml
