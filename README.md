@@ -48,5 +48,9 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 npm test
 ```
 
+## Pro Access & Direct USDC Support
+- **Monthly Pro**: `$19 USDC` · **Lifetime Pro**: `$49 USDC`
+- **EVM Address (Base / Ethereum / Arbitrum / Optimism)**: `0x1Dc13865aAD54C5ae7faD363595bC7ed087c69B9`
+
 ## License
 MIT

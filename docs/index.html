@@ -187,22 +187,61 @@ node bin/bounty-radar.mjs --audit https://github.com/owner/repo/issues/123 --jso
 				<div class="price-card featured">
 					<div class="tier-tag">FOR SERIOUS HUNTERS &amp; AGENT FLEETS</div>
 					<h3>BountyRadar Pro</h3>
-					<div class="price">$19<span> / month</span></div>
+					<div class="price">$19<span> / month · or $49 lifetime</span></div>
 					<ul>
 						<li>Instant Discord / Webhook alerts for $100+ 0-PR bounties</li>
 						<li>Deep linked-PR competition verification across all repos</li>
-						<li>Daily updated honeypot &amp; dead-maintainer blocklist</li>
+						<li>Daily updated honeypot &amp; prompt-injection blocklist</li>
 						<li>Unlimited CSV / JSON API feeds for autonomous agents</li>
 					</ul>
-					<a
-						href="https://github.com/teylerboal-dev/bounty-radar/issues/new?title=BountyRadar%20Pro%20Access%20Request&body=Hi!%20I%27d%20like%20early%20access%20to%20BountyRadar%20Pro%20alerts%20%26%20API%20feeds."
-						target="_blank"
-						rel="noreferrer"
-						class="btn-primary full-width"
-						>Request Pro Access ↗</a
-					>
+					<button id="openPayModal" class="btn-primary full-width">
+						Pay with USDC (Base / ETH) →
+					</button>
 				</div>
 			</section>
+
+			<div id="payModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="payTitle">
+				<div class="modal-card">
+					<div class="modal-head">
+						<h3 id="payTitle" style="margin: 0">BountyRadar Pro — Direct USDC Checkout</h3>
+						<button id="closePayModal" class="btn-secondary" style="padding: 4px 10px">✕</button>
+					</div>
+					<p class="muted" style="margin: 8px 0 14px; font-size: 0.88rem">
+						Zero platform fees. Send USDC on <strong>Base</strong> (recommended, &lt;$0.01 gas) or
+						<strong>Ethereum</strong>, then submit your TxHash for instant activation.
+					</p>
+					<div class="pay-plans">
+						<label class="plan-opt">
+							<input type="radio" name="proPlan" value="19" checked />
+							<span><strong>$19 USDC</strong> · Monthly</span>
+						</label>
+						<label class="plan-opt">
+							<input type="radio" name="proPlan" value="49" />
+							<span><strong>$49 USDC</strong> · Lifetime</span>
+						</label>
+					</div>
+					<div class="control-group" style="margin-top: 12px">
+						<label>USDC Receiving Address (Base / Ethereum / Arbitrum / Optimism)</label>
+						<div class="audit-row">
+							<input
+								id="payoutAddr"
+								type="text"
+								readonly
+								value="0x1Dc13865aAD54C5ae7faD363595bC7ed087c69B9"
+							/>
+							<button id="copyPayoutAddr" class="btn-secondary">Copy</button>
+						</div>
+					</div>
+					<div class="control-group" style="margin-top: 12px">
+						<label for="txHashInput">After sending, paste your Transaction Hash (0x...)</label>
+						<div class="audit-row">
+							<input id="txHashInput" type="text" placeholder="0x... (BaseScan / Etherscan TxHash)" />
+							<button id="submitTxBtn" class="btn-primary">Activate Pro ↗</button>
+						</div>
+					</div>
+					<div id="payStatus" class="status-bar" style="margin: 10px 0 0"></div>
+				</div>
+			</div>
 
 			<footer class="footer">
 				<span>BountyRadar · Zero-backend GitHub Bounty Intelligence</span>

@@ -538,6 +538,57 @@ code {
 	color: var(--muted);
 }
 
+.modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(5, 8, 15, 0.78);
+	backdrop-filter: blur(6px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	z-index: 100;
+}
+
+.modal.hidden {
+	display: none;
+}
+
+.modal-card {
+	width: 100%;
+	max-width: 540px;
+	background: var(--panel);
+	border: 1px solid var(--accent);
+	border-radius: 16px;
+	padding: 22px;
+	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+.modal-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.pay-plans {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.plan-opt {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 12px;
+	background: #0d1320;
+	border: 1px solid var(--panel-border);
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
 @media (max-width: 720px) {
 	.bounty-card {
 		grid-template-columns: 1fr;

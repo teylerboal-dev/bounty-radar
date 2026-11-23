@@ -54,9 +54,8 @@ async function runAudit(urlStr, headers, asJson) {
 		process.exit(1);
 	}
 	const base = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}`;
-	const [issueRes, commentsRes, prsRes] = await Promise.all([
+	const [issueRes, prsRes] = await Promise.all([
 		fetch(`${base}/issues/${parsed.number}`, { headers }),
-		fetch(`${base}/issues/${parsed.number}/comments?per_page=30`, { headers }),
 		fetch(`${base}/pulls?state=open&per_page=50`, { headers }),
 	]);
 	if (!issueRes.ok) {
@@ -64,6 +63,11 @@ async function runAudit(urlStr, headers, asJson) {
 		process.exit(1);
 	}
 	const issue = await issueRes.json();
+	const lastPage = Math.max(1, Math.ceil((issue.comments || 0) / 30));
+	const commentsRes = await fetch(
+		`${base}/issues/${parsed.number}/comments?per_page=30&page=${lastPage}`,
+		{ headers },
+	);
 	const comments = commentsRes.ok ? await commentsRes.json() : [];
 	const allPrs = prsRes.ok ? await prsRes.json() : [];
 	const re = new RegExp(`#${parsed.number}\\b`);

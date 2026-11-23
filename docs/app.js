@@ -194,9 +194,8 @@ async function runAuditUrl(rawUrl) {
 
 	const base = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}`;
 	try {
-		const [issueRes, commentsRes, prsRes] = await Promise.all([
+		const [issueRes, prsRes] = await Promise.all([
 			fetch(`${base}/issues/${parsed.number}`, { headers }),
-			fetch(`${base}/issues/${parsed.number}/comments?per_page=30`, { headers }),
 			fetch(`${base}/pulls?state=open&per_page=50`, { headers }),
 		]);
 		if (!issueRes.ok) {
@@ -204,6 +203,11 @@ async function runAuditUrl(rawUrl) {
 			return;
 		}
 		const issue = await issueRes.json();
+		const lastPage = Math.max(1, Math.ceil((issue.comments || 0) / 30));
+		const commentsRes = await fetch(
+			`${base}/issues/${parsed.number}/comments?per_page=30&page=${lastPage}`,
+			{ headers },
+		);
 		const comments = commentsRes.ok ? await commentsRes.json() : [];
 		const allPrs = prsRes.ok ? await prsRes.json() : [];
 		const re = new RegExp(`#${parsed.number}\\b`);
@@ -240,6 +244,53 @@ document.querySelectorAll('.demo-audit').forEach((btn) => {
 		auditUrlInput.value = btn.dataset.url;
 		runAuditUrl(btn.dataset.url);
 	});
+});
+
+// Direct USDC Checkout Modal
+const payModal = document.getElementById('payModal');
+const openPayModal = document.getElementById('openPayModal');
+const closePayModal = document.getElementById('closePayModal');
+const copyPayoutAddr = document.getElementById('copyPayoutAddr');
+const payoutAddr = document.getElementById('payoutAddr');
+const txHashInput = document.getElementById('txHashInput');
+const submitTxBtn = document.getElementById('submitTxBtn');
+const payStatus = document.getElementById('payStatus');
+
+openPayModal.addEventListener('click', () => payModal.classList.remove('hidden'));
+closePayModal.addEventListener('click', () => payModal.classList.add('hidden'));
+payModal.addEventListener('click', (e) => {
+	if (e.target === payModal) payModal.classList.add('hidden');
+});
+
+copyPayoutAddr.addEventListener('click', async () => {
+	try {
+		await navigator.clipboard.writeText(payoutAddr.value);
+		copyPayoutAddr.textContent = 'Copied!';
+		setTimeout(() => {
+			copyPayoutAddr.textContent = 'Copy';
+		}, 1200);
+	} catch {
+		payStatus.textContent = 'Copy failed — please select and copy the address manually.';
+	}
+});
+
+submitTxBtn.addEventListener('click', () => {
+	const tx = txHashInput.value.trim();
+	const plan = document.querySelector('input[name="proPlan"]:checked')?.value || '19';
+	if (!/^0x[a-fA-F0-9]{64}$/.test(tx)) {
+		payStatus.textContent = 'Please paste a valid 66-character 0x transaction hash.';
+		return;
+	}
+	const title = encodeURIComponent(`BountyRadar Pro Activation ($${plan} USDC)`);
+	const body = encodeURIComponent(
+		`Plan: $${plan} USDC (${plan === '49' ? 'Lifetime' : 'Monthly'})\nPayout Address: 0x1Dc13865aAD54C5ae7faD363595bC7ed087c69B9\nTxHash: ${tx}\n\nPlease verify on BaseScan/Etherscan and enable Pro feed & webhook alerts.`,
+	);
+	window.open(
+		`https://github.com/teylerboal-dev/bounty-radar/issues/new?title=${title}&body=${body}`,
+		'_blank',
+		'noopener,noreferrer',
+	);
+	payStatus.textContent = 'Activation ticket opened on GitHub with your TxHash!';
 });
 
 loadPrebakedFeed().then((loaded) => {
