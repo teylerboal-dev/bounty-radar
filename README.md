@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-24T03:34:05.862Z` · Scanned **43** issues, blocked **0** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-24T16:39:45.073Z` · Scanned **49** issues, blocked **1** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 100 | **$1** | `Ayush441-python/AUREN` | [#283 [Maths Bounty] Zero-variance assets like USDC get 0.0 self-correlation on the ](https://github.com/Ayush441-python/AUREN/issues/283) | 0 |
-| 98 | **$0.04** | `PhanKhoa95/oss-bot-trap-benchmark` | [#113 [Wave 11] fix(rpc): enforce BigInt stroops fee floor and SEP-10 challenge wind](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/113) | 1 |
-| 98 | **$0.035** | `PhanKhoa95/oss-bot-trap-benchmark` | [#115 [Wave 11] fix(xdr): reject boolean ledger sequence inputs and align 64-frame c](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/115) | 2 |
-| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#25 Add parseIssueUrl: owner, repo and number from an issue link](https://github.com/odiseo159-beep/mergit-demo/issues/25) | 1 |
-| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#27 Add timeLeft: how long a bounty stays open](https://github.com/odiseo159-beep/mergit-demo/issues/27) | 1 |
-| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#28 Add feeTable: a Markdown table of fees and payouts](https://github.com/odiseo159-beep/mergit-demo/issues/28) | 1 |
-| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#30 Add validateMergitJson: check mergit.json before committing it](https://github.com/odiseo159-beep/mergit-demo/issues/30) | 1 |
-| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5645 [Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5645) | 2 |
-| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5643 [Bounty] Answer the 3 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5643) | 1 |
-| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5641 [Bounty] Answer the 4 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5641) | 1 |
+| 97 | **1 USDC** | `VAN-Network/van-community` | [#2 Paid buyer-agent test: 1 USDC order advance + 1 USDC tester fee — Base mainnet](https://github.com/VAN-Network/van-community/issues/2) | 2 |
+| 93 | Unpriced | `freedom-winds/BountyScout` | [#1451 🎯 Bounty Alert: 15 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1451) | 0 |
+| 87 | Unpriced | `Fishers-Founders-United/Swapatron5000` | [#98 Bounty (2): Research how other swap boxes handle loss and junk, and write up w](https://github.com/Fishers-Founders-United/Swapatron5000/issues/98) | 2 |
+| 87 | Unpriced | `neilkpatel/whatagentsbuy` | [#18 Seller submission: Ops Control HQ — existing Base USDC API catalog](https://github.com/neilkpatel/whatagentsbuy/issues/18) | 0 |
+| 87 | Unpriced | `bad-antics/lateralus-lang` | [#971 [bounty] Vector arithmetic silently truncates unequal dimensions instead of re](https://github.com/bad-antics/lateralus-lang/issues/971) | 0 |
+| 82 | Unpriced | `hanzoai/cloud` | [#32 Verifiable agent-produced artifacts (SLSA provenance, Sigstore)](https://github.com/hanzoai/cloud/issues/32) | 1 |
+| 82 | Unpriced | `hanzoai/vfs` | [#44 Audit redundant requests across host, gofer and S3 (CETOFS)](https://github.com/hanzoai/vfs/issues/44) | 1 |
+| 82 | Unpriced | `hanzoai/agents` | [#80 Computer-workflow benchmark on Visor (OSWorld)](https://github.com/hanzoai/agents/issues/80) | 1 |
+| 82 | Unpriced | `hanzoai/agents` | [#78 Durable event-driven agent workflow replay (durable-execution patterns)](https://github.com/hanzoai/agents/issues/78) | 1 |
+| 82 | Unpriced | `odiseo159-beep/mergit-demo` | [#25 Add parseIssueUrl: owner, repo and number from an issue link](https://github.com/odiseo159-beep/mergit-demo/issues/25) | 1 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
