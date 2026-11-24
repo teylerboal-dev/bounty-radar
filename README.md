@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-23T12:42:56.322Z` · Scanned **46** issues, blocked **16** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-24T03:34:05.862Z` · Scanned **43** issues, blocked **0** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 100 | **$30,000** | `Ayush441-python/AUREN` | [#241 [Bug Bounty] Wallet import rounds a positive holding to zero and /risk rejects](https://github.com/Ayush441-python/AUREN/issues/241) | 1 |
-| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#9 Split AVAX locked stake out of the total](https://github.com/tradermarketcap/tradermarketcap-open/issues/9) | 2 |
-| 87 | Unpriced | `Omar0Gamal/SettleCore` | [#1 M-01: Cold-Path Withdrawals Bypass the Rolling 24-Hour Rate Cap (RateLimited._](https://github.com/Omar0Gamal/SettleCore/issues/1) | 0 |
-| 82 | Unpriced | `ilhamraduanbis-source/toyol-digital` | [#8 Toyol Mission Engine — persistent mission queue and heartbeat](https://github.com/ilhamraduanbis-source/toyol-digital/issues/8) | 0 |
-| 81 | Unpriced | `Ayush441-python/AUREN` | [#225 [Bug Bounty] Overview ranks a 15-point risk driver above a 20-point driver](https://github.com/Ayush441-python/AUREN/issues/225) | 1 |
-| 81 | Unpriced | `Swordfish90/Lemuroid` | [#1213 Bounty: RTC not syncing (NDS)](https://github.com/Swordfish90/Lemuroid/issues/1213) | 2 |
-| 79 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#3 Read SEI circulating supply from the chain](https://github.com/tradermarketcap/tradermarketcap-open/issues/3) | 3 |
-| 79 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#4 Read TIA (Celestia) circulating supply](https://github.com/tradermarketcap/tradermarketcap-open/issues/4) | 4 |
-| 68 | Unpriced | `monkey-trading/engine` | [#72 Bug bounty programme](https://github.com/monkey-trading/engine/issues/72) | 2 |
-| 52 | Unpriced | `ilhamraduanbis-source/toyol-digital` | [#5 🔐 Toyol Pocket — Tindakan pemilik sebelum bayaran sebenar](https://github.com/ilhamraduanbis-source/toyol-digital/issues/5) | 6 |
+| 100 | **$1** | `Ayush441-python/AUREN` | [#283 [Maths Bounty] Zero-variance assets like USDC get 0.0 self-correlation on the ](https://github.com/Ayush441-python/AUREN/issues/283) | 0 |
+| 98 | **$0.04** | `PhanKhoa95/oss-bot-trap-benchmark` | [#113 [Wave 11] fix(rpc): enforce BigInt stroops fee floor and SEP-10 challenge wind](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/113) | 1 |
+| 98 | **$0.035** | `PhanKhoa95/oss-bot-trap-benchmark` | [#115 [Wave 11] fix(xdr): reject boolean ledger sequence inputs and align 64-frame c](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/115) | 2 |
+| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#25 Add parseIssueUrl: owner, repo and number from an issue link](https://github.com/odiseo159-beep/mergit-demo/issues/25) | 1 |
+| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#27 Add timeLeft: how long a bounty stays open](https://github.com/odiseo159-beep/mergit-demo/issues/27) | 1 |
+| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#28 Add feeTable: a Markdown table of fees and payouts](https://github.com/odiseo159-beep/mergit-demo/issues/28) | 1 |
+| 87 | Unpriced | `odiseo159-beep/mergit-demo` | [#30 Add validateMergitJson: check mergit.json before committing it](https://github.com/odiseo159-beep/mergit-demo/issues/30) | 1 |
+| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5645 [Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5645) | 2 |
+| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5643 [Bounty] Answer the 3 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5643) | 1 |
+| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5641 [Bounty] Answer the 4 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5641) | 1 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
