@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-24T16:39:45.073Z` · Scanned **49** issues, blocked **1** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-25T01:42:41.597Z` · Scanned **36** issues, blocked **11** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 97 | **1 USDC** | `VAN-Network/van-community` | [#2 Paid buyer-agent test: 1 USDC order advance + 1 USDC tester fee — Base mainnet](https://github.com/VAN-Network/van-community/issues/2) | 2 |
-| 93 | Unpriced | `freedom-winds/BountyScout` | [#1451 🎯 Bounty Alert: 15 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1451) | 0 |
-| 87 | Unpriced | `Fishers-Founders-United/Swapatron5000` | [#98 Bounty (2): Research how other swap boxes handle loss and junk, and write up w](https://github.com/Fishers-Founders-United/Swapatron5000/issues/98) | 2 |
-| 87 | Unpriced | `neilkpatel/whatagentsbuy` | [#18 Seller submission: Ops Control HQ — existing Base USDC API catalog](https://github.com/neilkpatel/whatagentsbuy/issues/18) | 0 |
-| 87 | Unpriced | `bad-antics/lateralus-lang` | [#971 [bounty] Vector arithmetic silently truncates unequal dimensions instead of re](https://github.com/bad-antics/lateralus-lang/issues/971) | 0 |
-| 82 | Unpriced | `hanzoai/cloud` | [#32 Verifiable agent-produced artifacts (SLSA provenance, Sigstore)](https://github.com/hanzoai/cloud/issues/32) | 1 |
-| 82 | Unpriced | `hanzoai/vfs` | [#44 Audit redundant requests across host, gofer and S3 (CETOFS)](https://github.com/hanzoai/vfs/issues/44) | 1 |
-| 82 | Unpriced | `hanzoai/agents` | [#80 Computer-workflow benchmark on Visor (OSWorld)](https://github.com/hanzoai/agents/issues/80) | 1 |
-| 82 | Unpriced | `hanzoai/agents` | [#78 Durable event-driven agent workflow replay (durable-execution patterns)](https://github.com/hanzoai/agents/issues/78) | 1 |
-| 82 | Unpriced | `odiseo159-beep/mergit-demo` | [#25 Add parseIssueUrl: owner, repo and number from an issue link](https://github.com/odiseo159-beep/mergit-demo/issues/25) | 1 |
+| 100 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#1 🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomal](https://github.com/incidere/solana-agent-bounties/issues/1) | 2 |
+| 100 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#12 [Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consist](https://github.com/incidere/solana-agent-bounties/issues/12) | 0 |
+| 95 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#7 🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper ](https://github.com/incidere/solana-agent-bounties/issues/7) | 5 |
+| 95 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#13 🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics](https://github.com/incidere/solana-agent-bounties/issues/13) | 4 |
+| 95 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#6 🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstentio](https://github.com/incidere/solana-agent-bounties/issues/6) | 4 |
+| 95 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#8 🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Ano](https://github.com/incidere/solana-agent-bounties/issues/8) | 5 |
+| 95 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#9 🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis T](https://github.com/incidere/solana-agent-bounties/issues/9) | 5 |
+| 95 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#3 🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Ti](https://github.com/incidere/solana-agent-bounties/issues/3) | 3 |
+| 95 | **0.06 SOL** | `incidere/solana-agent-bounties` | [#2 🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fi](https://github.com/incidere/solana-agent-bounties/issues/2) | 5 |
+| 87 | Unpriced | `Ayush441-python/AUREN` | [#308 [Bug Bounty] Bundled reference risk score contradicts the current scoring rule](https://github.com/Ayush441-python/AUREN/issues/308) | 0 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
