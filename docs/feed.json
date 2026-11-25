@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-11-25T01:42:41.597Z",
-  "totalScanned": 36,
-  "honeypotsBlocked": 11,
+  "generatedAt": "2026-11-25T16:22:22.682Z",
+  "totalScanned": 42,
+  "honeypotsBlocked": 9,
   "results": [
+    {
+      "id": 6589443235,
+      "number": 454,
+      "repoFullName": "blitzcrieg1/agentmetry",
+      "title": "Bounty program: community detection/DLP rules with corpus fixtures",
+      "url": "https://github.com/blitzcrieg1/agentmetry/issues/454",
+      "labels": [
+        "documentation",
+        "bounty"
+      ],
+      "comments": 2,
+      "hasAssignee": false,
+      "ageDays": 0.9,
+      "createdAt": "2026-11-24T19:13:22Z",
+      "reward": {
+        "raw": "$100",
+        "amount": 100,
+        "currency": "USD",
+        "estimatedUsd": 100
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 100
+    },
     {
       "id": 6590807515,
       "number": 1,
@@ -16,88 +40,15 @@
         "zero-gas",
         "ai-agent"
       ],
-      "comments": 2,
+      "comments": 3,
       "hasAssignee": false,
-      "ageDays": 0.2,
+      "ageDays": 0.8,
       "createdAt": "2026-11-24T20:30:22Z",
       "reward": {
         "raw": "0.12 SOL",
         "amount": 0.12,
         "currency": "SOL",
         "estimatedUsd": 21.6
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 100
-    },
-    {
-      "id": 6593790066,
-      "number": 12,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/12",
-      "labels": [
-        "bounty"
-      ],
-      "comments": 0,
-      "hasAssignee": false,
-      "ageDays": 0.1,
-      "createdAt": "2026-11-24T23:48:46Z",
-      "reward": {
-        "raw": "0.08 SOL",
-        "amount": 0.08,
-        "currency": "SOL",
-        "estimatedUsd": 14.4
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 100
-    },
-    {
-      "id": 6592038930,
-      "number": 7,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
-      "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 5,
-      "hasAssignee": false,
-      "ageDays": 0.2,
-      "createdAt": "2026-11-24T21:45:36Z",
-      "reward": {
-        "raw": "0.12 SOL",
-        "amount": 0.12,
-        "currency": "SOL",
-        "estimatedUsd": 21.6
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6594015147,
-      "number": 13,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/13",
-      "labels": [
-        "bounty"
-      ],
-      "comments": 4,
-      "hasAssignee": false,
-      "ageDays": 0.1,
-      "createdAt": "2026-11-25T00:05:45Z",
-      "reward": {
-        "raw": "0.1 SOL",
-        "amount": 0.1,
-        "currency": "SOL",
-        "estimatedUsd": 18
       },
       "isHoneypot": false,
       "honeypotReason": null,
@@ -116,9 +67,9 @@
         "zero-gas",
         "ai-agent"
       ],
-      "comments": 4,
+      "comments": 5,
       "hasAssignee": false,
-      "ageDays": 0.2,
+      "ageDays": 0.8,
       "createdAt": "2026-11-24T21:45:35Z",
       "reward": {
         "raw": "0.1 SOL",
@@ -131,76 +82,18 @@
       "winnabilityScore": 95
     },
     {
-      "id": 6592647654,
-      "number": 8,
+      "id": 6593790066,
+      "number": 12,
       "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/8",
+      "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/12",
       "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
+        "bounty"
       ],
-      "comments": 5,
+      "comments": 4,
       "hasAssignee": false,
-      "ageDays": 0.1,
-      "createdAt": "2026-11-24T22:26:21Z",
-      "reward": {
-        "raw": "0.09 SOL",
-        "amount": 0.09,
-        "currency": "SOL",
-        "estimatedUsd": 16.2
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6592647941,
-      "number": 9,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/9",
-      "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 5,
-      "hasAssignee": false,
-      "ageDays": 0.1,
-      "createdAt": "2026-11-24T22:26:22Z",
-      "reward": {
-        "raw": "0.09 SOL",
-        "amount": 0.09,
-        "currency": "SOL",
-        "estimatedUsd": 16.2
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6590808353,
-      "number": 3,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Timer Starvation Under Backpressure",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/3",
-      "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 3,
-      "hasAssignee": false,
-      "ageDays": 0.2,
-      "createdAt": "2026-11-24T20:30:25Z",
+      "ageDays": 0.7,
+      "createdAt": "2026-11-24T23:48:46Z",
       "reward": {
         "raw": "0.08 SOL",
         "amount": 0.08,
@@ -212,43 +105,39 @@
       "winnabilityScore": 95
     },
     {
-      "id": 6590807910,
-      "number": 2,
+      "id": 6590808653,
+      "number": 4,
       "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/2",
+      "title": "📋 [Free Agent Tool] Zero-Auth Plain-Text Shared Agent Wiki (/yard/w/<slug>) + Keyless Failover OpenAI API",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/4",
       "labels": [
-        "help wanted",
         "bounty",
-        "solana",
         "zero-gas",
         "ai-agent"
       ],
-      "comments": 5,
-      "hasAssignee": false,
-      "ageDays": 0.2,
-      "createdAt": "2026-11-24T20:30:24Z",
-      "reward": {
-        "raw": "0.06 SOL",
-        "amount": 0.06,
-        "currency": "SOL",
-        "estimatedUsd": 10.8
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6594817435,
-      "number": 308,
-      "repoFullName": "Ayush441-python/AUREN",
-      "title": "[Bug Bounty] Bundled reference risk score contradicts the current scoring rules",
-      "url": "https://github.com/Ayush441-python/AUREN/issues/308",
-      "labels": [],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 0,
-      "createdAt": "2026-11-25T01:12:19Z",
+      "ageDays": 0.8,
+      "createdAt": "2026-11-24T20:30:26Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 93
+    },
+    {
+      "id": 6588562458,
+      "number": 5745,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5745",
+      "labels": [
+        "ready",
+        "bounty"
+      ],
+      "comments": 2,
+      "hasAssignee": false,
+      "ageDays": 0.9,
+      "createdAt": "2026-11-24T18:22:23Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
@@ -263,7 +152,7 @@
       "labels": [],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 10.7,
+      "ageDays": 11.3,
       "createdAt": "2026-11-14T09:43:16Z",
       "reward": null,
       "isHoneypot": false,
@@ -271,71 +160,129 @@
       "winnabilityScore": 82
     },
     {
-      "id": 6548227688,
-      "number": 219,
-      "repoFullName": "Ayush441-python/AUREN",
-      "title": "[API Integration] AUREN Risk Autopilot — Live Web Dashboard & External De-Escalation Agent Calling /risk, /liquidity & /wallet",
-      "url": "https://github.com/Ayush441-python/AUREN/issues/219",
-      "labels": [],
-      "comments": 1,
-      "hasAssignee": false,
-      "ageDays": 2.2,
-      "createdAt": "2026-11-22T21:48:30Z",
-      "reward": null,
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 81
-    },
-    {
-      "id": 6588555914,
-      "number": 5736,
-      "repoFullName": "Ikalus1988/MisakaNet",
-      "title": "[Bounty] Answer the 3 linked question(s)",
-      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5736",
+      "id": 6592038930,
+      "number": 7,
+      "repoFullName": "incidere/solana-agent-bounties",
+      "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
       "labels": [
-        "ready",
-        "bounty"
+        "help wanted",
+        "bounty",
+        "solana",
+        "zero-gas",
+        "ai-agent"
       ],
-      "comments": 3,
+      "comments": 6,
       "hasAssignee": false,
-      "ageDays": 0.3,
-      "createdAt": "2026-11-24T18:22:00Z",
-      "reward": null,
+      "ageDays": 0.8,
+      "createdAt": "2026-11-24T21:45:36Z",
+      "reward": {
+        "raw": "0.12 SOL",
+        "amount": 0.12,
+        "currency": "SOL",
+        "estimatedUsd": 21.6
+      },
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 79
     },
     {
-      "id": 5458955395,
-      "number": 1,
-      "repoFullName": "Nish916/revenue-command-runner",
-      "title": "Cloud Revenue Command Dashboard",
-      "url": "https://github.com/Nish916/revenue-command-runner/issues/1",
-      "labels": [],
-      "comments": 3,
+      "id": 6594015147,
+      "number": 13,
+      "repoFullName": "incidere/solana-agent-bounties",
+      "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/13",
+      "labels": [
+        "bounty"
+      ],
+      "comments": 8,
       "hasAssignee": false,
-      "ageDays": 70.8,
-      "createdAt": "2026-09-15T07:29:21Z",
-      "reward": null,
+      "ageDays": 0.7,
+      "createdAt": "2026-11-25T00:05:45Z",
+      "reward": {
+        "raw": "0.1 SOL",
+        "amount": 0.1,
+        "currency": "SOL",
+        "estimatedUsd": 18
+      },
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 58
+      "winnabilityScore": 79
     },
     {
-      "id": 4052135039,
-      "number": 17,
-      "repoFullName": "Emmanuel-Evenzur/syetem_prompt",
-      "title": "argilla-1.25.0-py3-none-any.whl: 85 vulnerabilities (highest severity is: 10.0) [main] (reachable)",
-      "url": "https://github.com/Emmanuel-Evenzur/syetem_prompt/issues/17",
-      "labels": [],
-      "comments": 3,
+      "id": 6592647941,
+      "number": 9,
+      "repoFullName": "incidere/solana-agent-bounties",
+      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/9",
+      "labels": [
+        "help wanted",
+        "bounty",
+        "solana",
+        "zero-gas",
+        "ai-agent"
+      ],
+      "comments": 6,
       "hasAssignee": false,
-      "ageDays": 259.5,
-      "createdAt": "2026-03-10T14:19:01Z",
+      "ageDays": 0.7,
+      "createdAt": "2026-11-24T22:26:22Z",
+      "reward": {
+        "raw": "0.09 SOL",
+        "amount": 0.09,
+        "currency": "SOL",
+        "estimatedUsd": 16.2
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 79
+    },
+    {
+      "id": 6592647654,
+      "number": 8,
+      "repoFullName": "incidere/solana-agent-bounties",
+      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/8",
+      "labels": [
+        "help wanted",
+        "bounty",
+        "solana",
+        "zero-gas",
+        "ai-agent"
+      ],
+      "comments": 7,
+      "hasAssignee": false,
+      "ageDays": 0.7,
+      "createdAt": "2026-11-24T22:26:21Z",
+      "reward": {
+        "raw": "0.09 SOL",
+        "amount": 0.09,
+        "currency": "SOL",
+        "estimatedUsd": 16.2
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 79
+    },
+    {
+      "id": 6438091346,
+      "number": 5,
+      "repoFullName": "janzeerOrg/janzeer-sdk-python",
+      "title": "[20 JNZ] Example: accept a payment (watch an address, match the memo, confirm it is final)",
+      "url": "https://github.com/janzeerOrg/janzeer-sdk-python/issues/5",
+      "labels": [
+        "documentation",
+        "help wanted",
+        "good first issue",
+        "bounty"
+      ],
+      "comments": 5,
+      "hasAssignee": false,
+      "ageDays": 8.5,
+      "createdAt": "2026-11-17T05:29:30Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 43
+      "winnabilityScore": 74
     }
   ]
 }

@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-25T01:42:41.597Z` · Scanned **36** issues, blocked **11** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-25T16:22:22.682Z` · Scanned **42** issues, blocked **9** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 100 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#1 🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomal](https://github.com/incidere/solana-agent-bounties/issues/1) | 2 |
-| 100 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#12 [Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consist](https://github.com/incidere/solana-agent-bounties/issues/12) | 0 |
-| 95 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#7 🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper ](https://github.com/incidere/solana-agent-bounties/issues/7) | 5 |
-| 95 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#13 🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics](https://github.com/incidere/solana-agent-bounties/issues/13) | 4 |
-| 95 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#6 🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstentio](https://github.com/incidere/solana-agent-bounties/issues/6) | 4 |
-| 95 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#8 🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Ano](https://github.com/incidere/solana-agent-bounties/issues/8) | 5 |
-| 95 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#9 🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis T](https://github.com/incidere/solana-agent-bounties/issues/9) | 5 |
-| 95 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#3 🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Ti](https://github.com/incidere/solana-agent-bounties/issues/3) | 3 |
-| 95 | **0.06 SOL** | `incidere/solana-agent-bounties` | [#2 🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fi](https://github.com/incidere/solana-agent-bounties/issues/2) | 5 |
-| 87 | Unpriced | `Ayush441-python/AUREN` | [#308 [Bug Bounty] Bundled reference risk score contradicts the current scoring rule](https://github.com/Ayush441-python/AUREN/issues/308) | 0 |
+| 100 | **$100** | `blitzcrieg1/agentmetry` | [#454 Bounty program: community detection/DLP rules with corpus fixtures](https://github.com/blitzcrieg1/agentmetry/issues/454) | 2 |
+| 95 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#1 🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomal](https://github.com/incidere/solana-agent-bounties/issues/1) | 3 |
+| 95 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#6 🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstentio](https://github.com/incidere/solana-agent-bounties/issues/6) | 5 |
+| 95 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#12 [Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consist](https://github.com/incidere/solana-agent-bounties/issues/12) | 4 |
+| 93 | Unpriced | `incidere/solana-agent-bounties` | [#4 📋 [Free Agent Tool] Zero-Auth Plain-Text Shared Agent Wiki (/yard/w/<slug>) +](https://github.com/incidere/solana-agent-bounties/issues/4) | 0 |
+| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5745 [Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5745) | 2 |
+| 82 | Unpriced | `ilhamraduanbis-source/toyol-digital` | [#8 Toyol Mission Engine — persistent mission queue and heartbeat](https://github.com/ilhamraduanbis-source/toyol-digital/issues/8) | 0 |
+| 79 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#7 🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper ](https://github.com/incidere/solana-agent-bounties/issues/7) | 6 |
+| 79 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#13 🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics](https://github.com/incidere/solana-agent-bounties/issues/13) | 8 |
+| 79 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#9 🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis T](https://github.com/incidere/solana-agent-bounties/issues/9) | 6 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
