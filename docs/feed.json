@@ -1,38 +1,42 @@
 {
-  "generatedAt": "2026-11-25T16:22:22.682Z",
-  "totalScanned": 42,
-  "honeypotsBlocked": 9,
+  "generatedAt": "2026-11-26T01:16:10.468Z",
+  "totalScanned": 45,
+  "honeypotsBlocked": 8,
   "results": [
     {
-      "id": 6589443235,
-      "number": 454,
-      "repoFullName": "blitzcrieg1/agentmetry",
-      "title": "Bounty program: community detection/DLP rules with corpus fixtures",
-      "url": "https://github.com/blitzcrieg1/agentmetry/issues/454",
+      "id": 6401178635,
+      "number": 100,
+      "repoFullName": "PhanKhoa95/oss-bot-trap-benchmark",
+      "title": "[Arena 30pts / $0.03] fix(x402): preserve explicitRetryable override and boundAt in src/x402_payment_guard.ts",
+      "url": "https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/100",
       "labels": [
-        "documentation",
-        "bounty"
+        "help wanted",
+        "good first issue",
+        "bounty",
+        "up-for-grabs",
+        "🤖 Bot-Tier-2: Template-Sybil [S:21-40]",
+        "🎯 Bot-Score: 95-100% [Confirmed-AI]"
       ],
-      "comments": 2,
+      "comments": 1,
       "hasAssignee": false,
-      "ageDays": 0.9,
-      "createdAt": "2026-11-24T19:13:22Z",
+      "ageDays": 10.8,
+      "createdAt": "2026-11-15T07:09:05Z",
       "reward": {
-        "raw": "$100",
-        "amount": 100,
+        "raw": "$0.03",
+        "amount": 0.03,
         "currency": "USD",
-        "estimatedUsd": 100
+        "estimatedUsd": 0.03
       },
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 100
+      "winnabilityScore": 98
     },
     {
-      "id": 6590807515,
+      "id": 6590809282,
       "number": 1,
-      "repoFullName": "incidere/solana-agent-bounties",
+      "repoFullName": "incidere/vloop-free-openai-mcp",
       "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/1",
+      "url": "https://github.com/incidere/vloop-free-openai-mcp/issues/1",
       "labels": [
         "help wanted",
         "bounty",
@@ -42,8 +46,8 @@
       ],
       "comments": 3,
       "hasAssignee": false,
-      "ageDays": 0.8,
-      "createdAt": "2026-11-24T20:30:22Z",
+      "ageDays": 1.2,
+      "createdAt": "2026-11-24T20:30:28Z",
       "reward": {
         "raw": "0.12 SOL",
         "amount": 0.12,
@@ -55,89 +59,68 @@
       "winnabilityScore": 95
     },
     {
-      "id": 6592038632,
-      "number": 6,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/6",
+      "id": 6616837494,
+      "number": 101,
+      "repoFullName": "SoroWork/sorowork-contracts",
+      "title": "Add test: approve_work correctly transfers exact bounty amount",
+      "url": "https://github.com/SoroWork/sorowork-contracts/issues/101",
       "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 5,
-      "hasAssignee": false,
-      "ageDays": 0.8,
-      "createdAt": "2026-11-24T21:45:35Z",
-      "reward": {
-        "raw": "0.1 SOL",
-        "amount": 0.1,
-        "currency": "SOL",
-        "estimatedUsd": 18
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6593790066,
-      "number": 12,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/12",
-      "labels": [
-        "bounty"
-      ],
-      "comments": 4,
-      "hasAssignee": false,
-      "ageDays": 0.7,
-      "createdAt": "2026-11-24T23:48:46Z",
-      "reward": {
-        "raw": "0.08 SOL",
-        "amount": 0.08,
-        "currency": "SOL",
-        "estimatedUsd": 14.4
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6590808653,
-      "number": 4,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "📋 [Free Agent Tool] Zero-Auth Plain-Text Shared Agent Wiki (/yard/w/<slug>) + Keyless Failover OpenAI API",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/4",
-      "labels": [
-        "bounty",
-        "zero-gas",
-        "ai-agent"
+        "testing"
       ],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 0.8,
-      "createdAt": "2026-11-24T20:30:26Z",
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:41:42Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 93
+      "winnabilityScore": 87
     },
     {
-      "id": 6588562458,
-      "number": 5745,
-      "repoFullName": "Ikalus1988/MisakaNet",
-      "title": "[Bounty] Answer the 2 linked question(s)",
-      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5745",
+      "id": 6616727455,
+      "number": 1,
+      "repoFullName": "SoroWork/sorowork-contracts",
+      "title": "BountyEscrow: create_bounty does not validate zero-amount deposits",
+      "url": "https://github.com/SoroWork/sorowork-contracts/issues/1",
       "labels": [
-        "ready",
-        "bounty"
+        "bug"
       ],
-      "comments": 2,
+      "comments": 0,
       "hasAssignee": false,
-      "ageDays": 0.9,
-      "createdAt": "2026-11-24T18:22:23Z",
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:32:48Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 87
+    },
+    {
+      "id": 6616654586,
+      "number": 1724,
+      "repoFullName": "paraloom-labs/paraloom-core",
+      "title": "[BOUNTY] Low: Swap fresh-address secret keys and note blindings stored in plaintext `chrome.storage.local`, outside the encrypted vault and readable while the wallet is locked",
+      "url": "https://github.com/paraloom-labs/paraloom-core/issues/1724",
+      "labels": [],
+      "comments": 0,
+      "hasAssignee": false,
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:27:01Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 87
+    },
+    {
+      "id": 6616640951,
+      "number": 1723,
+      "repoFullName": "paraloom-labs/paraloom-core",
+      "title": "[BOUNTY] Low: Wallet silently discards the user's `slippageBps` — swaps execute with the server router's tolerance, not the approved one",
+      "url": "https://github.com/paraloom-labs/paraloom-core/issues/1723",
+      "labels": [],
+      "comments": 0,
+      "hasAssignee": false,
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:25:59Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
@@ -152,7 +135,7 @@
       "labels": [],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 11.3,
+      "ageDays": 11.6,
       "createdAt": "2026-11-14T09:43:16Z",
       "reward": null,
       "isHoneypot": false,
@@ -160,31 +143,38 @@
       "winnabilityScore": 82
     },
     {
-      "id": 6592038930,
-      "number": 7,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
+      "id": 6616866464,
+      "number": 140,
+      "repoFullName": "SoroWork/sorowork-backend",
+      "title": "Stellar: add wallet balance check on task creation",
+      "url": "https://github.com/SoroWork/sorowork-backend/issues/140",
       "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
+        "enhancement"
       ],
-      "comments": 6,
+      "comments": 1,
       "hasAssignee": false,
-      "ageDays": 0.8,
-      "createdAt": "2026-11-24T21:45:36Z",
-      "reward": {
-        "raw": "0.12 SOL",
-        "amount": 0.12,
-        "currency": "SOL",
-        "estimatedUsd": 21.6
-      },
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:44:02Z",
+      "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 79
+      "winnabilityScore": 81
+    },
+    {
+      "id": 6616485858,
+      "number": 1722,
+      "repoFullName": "paraloom-labs/paraloom-core",
+      "title": "[BOUNTY] Medium: Co-sign `transact_spl` settlement hardcodes the classic SPL Token program — Token-2022 mint deposits can never settle",
+      "url": "https://github.com/paraloom-labs/paraloom-core/issues/1722",
+      "labels": [],
+      "comments": 1,
+      "hasAssignee": false,
+      "ageDays": 0,
+      "createdAt": "2026-11-26T00:13:42Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 81
     },
     {
       "id": 6594015147,
@@ -195,9 +185,9 @@
       "labels": [
         "bounty"
       ],
-      "comments": 8,
+      "comments": 9,
       "hasAssignee": false,
-      "ageDays": 0.7,
+      "ageDays": 1,
       "createdAt": "2026-11-25T00:05:45Z",
       "reward": {
         "raw": "0.1 SOL",
@@ -210,79 +200,166 @@
       "winnabilityScore": 79
     },
     {
-      "id": 6592647941,
-      "number": 9,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/9",
+      "id": 6433335656,
+      "number": 64,
+      "repoFullName": "hanzoai/vfs",
+      "title": "[Bounty #7] Parallel delta restore · vfs (ParaSync)",
+      "url": "https://github.com/hanzoai/vfs/issues/64",
       "labels": [
         "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 6,
-      "hasAssignee": false,
-      "ageDays": 0.7,
-      "createdAt": "2026-11-24T22:26:22Z",
-      "reward": {
-        "raw": "0.09 SOL",
-        "amount": 0.09,
-        "currency": "SOL",
-        "estimatedUsd": 16.2
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 79
-    },
-    {
-      "id": 6592647654,
-      "number": 8,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/8",
-      "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 7,
-      "hasAssignee": false,
-      "ageDays": 0.7,
-      "createdAt": "2026-11-24T22:26:21Z",
-      "reward": {
-        "raw": "0.09 SOL",
-        "amount": 0.09,
-        "currency": "SOL",
-        "estimatedUsd": 16.2
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 79
-    },
-    {
-      "id": 6438091346,
-      "number": 5,
-      "repoFullName": "janzeerOrg/janzeer-sdk-python",
-      "title": "[20 JNZ] Example: accept a payment (watch an address, match the memo, confirm it is final)",
-      "url": "https://github.com/janzeerOrg/janzeer-sdk-python/issues/5",
-      "labels": [
-        "documentation",
-        "help wanted",
-        "good first issue",
+        "perf",
+        "research",
         "bounty"
       ],
-      "comments": 5,
+      "comments": 3,
       "hasAssignee": false,
-      "ageDays": 8.5,
-      "createdAt": "2026-11-17T05:29:30Z",
+      "ageDays": 9.1,
+      "createdAt": "2026-11-16T23:42:59Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 74
+    },
+    {
+      "id": 6433331534,
+      "number": 58,
+      "repoFullName": "hanzoai/vfs",
+      "title": "[Bounty #1] Partial-write absorption · vfs (WSBuffer)",
+      "url": "https://github.com/hanzoai/vfs/issues/58",
+      "labels": [
+        "help wanted",
+        "perf",
+        "research",
+        "bounty",
+        "wave-1"
+      ],
+      "comments": 3,
+      "hasAssignee": false,
+      "ageDays": 9.1,
+      "createdAt": "2026-11-16T23:42:41Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 74
+    },
+    {
+      "id": 6433332203,
+      "number": 59,
+      "repoFullName": "hanzoai/vfs",
+      "title": "[Bounty #2] Compact sparse-range indexing · vfs (RASK)",
+      "url": "https://github.com/hanzoai/vfs/issues/59",
+      "labels": [
+        "help wanted",
+        "perf",
+        "research",
+        "bounty"
+      ],
+      "comments": 3,
+      "hasAssignee": false,
+      "ageDays": 9.1,
+      "createdAt": "2026-11-16T23:42:44Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 74
+    },
+    {
+      "id": 5000307969,
+      "number": 25,
+      "repoFullName": "blitzcrieg1/agentmetry",
+      "title": "Grow the detection benchmark corpus with more benign sessions",
+      "url": "https://github.com/blitzcrieg1/agentmetry/issues/25",
+      "labels": [
+        "good first issue",
+        "detection-rule",
+        "bounty"
+      ],
+      "comments": 1,
+      "hasAssignee": false,
+      "ageDays": 120.4,
+      "createdAt": "2026-07-28T15:32:23Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 72
+    },
+    {
+      "id": 3506945623,
+      "number": 5066,
+      "repoFullName": "devpool-directory/devpool-directory",
+      "title": "Cow Swap Cash Out",
+      "url": "https://github.com/devpool-directory/devpool-directory/issues/5066",
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Price: 600 USD",
+        "Time: <1 Week"
+      ],
+      "comments": 4,
+      "hasAssignee": false,
+      "ageDays": 409.6,
+      "createdAt": "2025-10-12T10:41:15Z",
+      "reward": {
+        "raw": "$600",
+        "amount": 600,
+        "currency": "USD",
+        "estimatedUsd": 600
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 69
+    },
+    {
+      "id": 6284723684,
+      "number": 1,
+      "repoFullName": "blackcode-ch/tmx-go-public",
+      "title": "[Bounty: USD 80] Fix the Windows recorded-host stop race",
+      "url": "https://github.com/blackcode-ch/tmx-go-public/issues/1",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "comments": 5,
+      "hasAssignee": false,
+      "ageDays": 16.6,
+      "createdAt": "2026-11-09T10:55:54Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 60
+    },
+    {
+      "id": 6138413816,
+      "number": 36,
+      "repoFullName": "Clawland-AI/picclaw",
+      "title": "Chinese documentation bounty: remaining scope, AI assistance and CNY payout",
+      "url": "https://github.com/Clawland-AI/picclaw/issues/36",
+      "labels": [],
+      "comments": 4,
+      "hasAssignee": false,
+      "ageDays": 25.3,
+      "createdAt": "2026-10-31T18:38:44Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 60
+    },
+    {
+      "id": 1021448472,
+      "number": 1,
+      "repoFullName": "Opty-Fi/Bounties",
+      "title": "Uniswap V2 Pools Dataset ",
+      "url": "https://github.com/Opty-Fi/Bounties/issues/1",
+      "labels": [
+        "bounty"
+      ],
+      "comments": 1,
+      "hasAssignee": false,
+      "ageDays": 1874.2,
+      "createdAt": "2021-10-08T20:42:38Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 57
     }
   ]
 }
