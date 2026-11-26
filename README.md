@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-26T01:16:10.468Z` · Scanned **45** issues, blocked **8** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-26T15:56:14.971Z` · Scanned **44** issues, blocked **3** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 98 | **$0.03** | `PhanKhoa95/oss-bot-trap-benchmark` | [#100 [Arena 30pts / $0.03] fix(x402): preserve explicitRetryable override and bound](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/100) | 1 |
-| 95 | **0.12 SOL** | `incidere/vloop-free-openai-mcp` | [#1 🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomal](https://github.com/incidere/vloop-free-openai-mcp/issues/1) | 3 |
-| 87 | Unpriced | `SoroWork/sorowork-contracts` | [#101 Add test: approve_work correctly transfers exact bounty amount](https://github.com/SoroWork/sorowork-contracts/issues/101) | 0 |
-| 87 | Unpriced | `SoroWork/sorowork-contracts` | [#1 BountyEscrow: create_bounty does not validate zero-amount deposits](https://github.com/SoroWork/sorowork-contracts/issues/1) | 0 |
-| 87 | Unpriced | `paraloom-labs/paraloom-core` | [#1724 [BOUNTY] Low: Swap fresh-address secret keys and note blindings stored in plai](https://github.com/paraloom-labs/paraloom-core/issues/1724) | 0 |
-| 87 | Unpriced | `paraloom-labs/paraloom-core` | [#1723 [BOUNTY] Low: Wallet silently discards the user's `slippageBps` — swaps execut](https://github.com/paraloom-labs/paraloom-core/issues/1723) | 0 |
+| 100 | **$69.1** | `dev-kp-eloper/BountyScout` | [#1807 🎯 Bounty Alert: 5 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1807) | 0 |
+| 100 | **$69.1** | `aeyakovenko/percolator-cli` | [#103 # Round 2: Multi-Step Self-Liquidation Drains 98.71% of Insurance Pool ($69.10](https://github.com/aeyakovenko/percolator-cli/issues/103) | 1 |
+| 100 | **$25** | `Ayush441-python/AUREN` | [#325 [API Integration Bounty] Vercel AI SDK Core Tool for AUREN /risk](https://github.com/Ayush441-python/AUREN/issues/325) | 0 |
+| 95 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#12 [Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consist](https://github.com/incidere/solana-agent-bounties/issues/12) | 5 |
+| 93 | Unpriced | `Rohank143/BountyScout` | [#149 🎯 Bounty Alert: 8 New Opportunityies found](https://github.com/Rohank143/BountyScout/issues/149) | 0 |
+| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#108 Supply rule for Official Trump (TRUMP)](https://github.com/tradermarketcap/tradermarketcap-open/issues/108) | 1 |
+| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#107 Supply rule for LayerZero (ZRO)](https://github.com/tradermarketcap/tradermarketcap-open/issues/107) | 1 |
+| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#112 Supply rule for MANTRA (MANTRA)](https://github.com/tradermarketcap/tradermarketcap-open/issues/112) | 2 |
 | 82 | Unpriced | `ilhamraduanbis-source/toyol-digital` | [#8 Toyol Mission Engine — persistent mission queue and heartbeat](https://github.com/ilhamraduanbis-source/toyol-digital/issues/8) | 0 |
-| 81 | Unpriced | `SoroWork/sorowork-backend` | [#140 Stellar: add wallet balance check on task creation](https://github.com/SoroWork/sorowork-backend/issues/140) | 1 |
-| 81 | Unpriced | `paraloom-labs/paraloom-core` | [#1722 [BOUNTY] Medium: Co-sign `transact_spl` settlement hardcodes the classic SPL T](https://github.com/paraloom-labs/paraloom-core/issues/1722) | 1 |
-| 79 | **0.1 SOL** | `incidere/solana-agent-bounties` | [#13 🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics](https://github.com/incidere/solana-agent-bounties/issues/13) | 9 |
+| 79 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#7 🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper ](https://github.com/incidere/solana-agent-bounties/issues/7) | 8 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
