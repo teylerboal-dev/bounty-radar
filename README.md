@@ -27,20 +27,20 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-26T15:56:14.971Z` · Scanned **44** issues, blocked **3** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-27T01:14:11.921Z` · Scanned **48** issues, blocked **4** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 100 | **$69.1** | `dev-kp-eloper/BountyScout` | [#1807 🎯 Bounty Alert: 5 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1807) | 0 |
-| 100 | **$69.1** | `aeyakovenko/percolator-cli` | [#103 # Round 2: Multi-Step Self-Liquidation Drains 98.71% of Insurance Pool ($69.10](https://github.com/aeyakovenko/percolator-cli/issues/103) | 1 |
-| 100 | **$25** | `Ayush441-python/AUREN` | [#325 [API Integration Bounty] Vercel AI SDK Core Tool for AUREN /risk](https://github.com/Ayush441-python/AUREN/issues/325) | 0 |
-| 95 | **0.08 SOL** | `incidere/solana-agent-bounties` | [#12 [Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consist](https://github.com/incidere/solana-agent-bounties/issues/12) | 5 |
-| 93 | Unpriced | `Rohank143/BountyScout` | [#149 🎯 Bounty Alert: 8 New Opportunityies found](https://github.com/Rohank143/BountyScout/issues/149) | 0 |
-| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#108 Supply rule for Official Trump (TRUMP)](https://github.com/tradermarketcap/tradermarketcap-open/issues/108) | 1 |
-| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#107 Supply rule for LayerZero (ZRO)](https://github.com/tradermarketcap/tradermarketcap-open/issues/107) | 1 |
-| 87 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#112 Supply rule for MANTRA (MANTRA)](https://github.com/tradermarketcap/tradermarketcap-open/issues/112) | 2 |
+| 93 | Unpriced | `Ikalus1988/MisakaNet` | [#5849 [Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5849) | 0 |
+| 88 | **2 USDC** | `immanueltella-web/quantum-media-os.` | [#1 💷 XOOL Penniless Agent — first £1 target](https://github.com/immanueltella-web/quantum-media-os./issues/1) | 0 |
+| 87 | Unpriced | `Ikalus1988/MisakaNet` | [#5811 [Bounty] Answer the 2 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/5811) | 2 |
+| 82 | Unpriced | `hanzoai/hips` | [#17 [HIP-1347] Umbrella Research Bounties: Event-Driven Agent Reliability](https://github.com/hanzoai/hips/issues/17) | 2 |
+| 82 | Unpriced | `zoo-apps/papers` | [#10 Decentralized experience ledger](https://github.com/zoo-apps/papers/issues/10) | 1 |
+| 82 | Unpriced | `Ikalus1988/MisakaNet` | [#4998 [Bounty] Answer the 4 linked question(s)](https://github.com/Ikalus1988/MisakaNet/issues/4998) | 1 |
 | 82 | Unpriced | `ilhamraduanbis-source/toyol-digital` | [#8 Toyol Mission Engine — persistent mission queue and heartbeat](https://github.com/ilhamraduanbis-source/toyol-digital/issues/8) | 0 |
-| 79 | **0.12 SOL** | `incidere/solana-agent-bounties` | [#7 🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper ](https://github.com/incidere/solana-agent-bounties/issues/7) | 8 |
+| 79 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#9 🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis T](https://github.com/incidere/solana-agent-bounties/issues/9) | 7 |
+| 79 | **0.09 SOL** | `incidere/solana-agent-bounties` | [#8 🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Ano](https://github.com/incidere/solana-agent-bounties/issues/8) | 10 |
+| 79 | Unpriced | `tradermarketcap/tradermarketcap-open` | [#108 Supply rule for Official Trump (TRUMP)](https://github.com/tradermarketcap/tradermarketcap-open/issues/108) | 3 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests

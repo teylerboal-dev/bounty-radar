@@ -1,173 +1,128 @@
 {
-  "generatedAt": "2026-11-26T15:56:14.971Z",
-  "totalScanned": 44,
-  "honeypotsBlocked": 3,
+  "generatedAt": "2026-11-27T01:14:11.921Z",
+  "totalScanned": 48,
+  "honeypotsBlocked": 4,
   "results": [
     {
-      "id": 6629167055,
-      "number": 1807,
-      "repoFullName": "dev-kp-eloper/BountyScout",
-      "title": "🎯 Bounty Alert: 5 New Opportunityies found",
-      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1807",
+      "id": 6631894729,
+      "number": 5849,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5849",
       "labels": [
-        "bounty-alert"
-      ],
-      "comments": 0,
-      "hasAssignee": false,
-      "ageDays": 0,
-      "createdAt": "2026-11-26T14:48:24Z",
-      "reward": {
-        "raw": "$69.1",
-        "amount": 69.1,
-        "currency": "USD",
-        "estimatedUsd": 69.1
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 100
-    },
-    {
-      "id": 6628441397,
-      "number": 103,
-      "repoFullName": "aeyakovenko/percolator-cli",
-      "title": "# Round 2: Multi-Step Self-Liquidation Drains 98.71% of Insurance Pool ($69.10 / $70)",
-      "url": "https://github.com/aeyakovenko/percolator-cli/issues/103",
-      "labels": [],
-      "comments": 1,
-      "hasAssignee": false,
-      "ageDays": 0.1,
-      "createdAt": "2026-11-26T14:09:55Z",
-      "reward": {
-        "raw": "$69.1",
-        "amount": 69.1,
-        "currency": "USD",
-        "estimatedUsd": 69.1
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 100
-    },
-    {
-      "id": 6629683068,
-      "number": 325,
-      "repoFullName": "Ayush441-python/AUREN",
-      "title": "[API Integration Bounty] Vercel AI SDK Core Tool for AUREN /risk",
-      "url": "https://github.com/Ayush441-python/AUREN/issues/325",
-      "labels": [],
-      "comments": 0,
-      "hasAssignee": false,
-      "ageDays": 0,
-      "createdAt": "2026-11-26T15:15:33Z",
-      "reward": {
-        "raw": "$25",
-        "amount": 25,
-        "currency": "USD",
-        "estimatedUsd": 25
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 100
-    },
-    {
-      "id": 6593790066,
-      "number": 12,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/12",
-      "labels": [
+        "ready",
         "bounty"
       ],
-      "comments": 5,
-      "hasAssignee": false,
-      "ageDays": 1.7,
-      "createdAt": "2026-11-24T23:48:46Z",
-      "reward": {
-        "raw": "0.08 SOL",
-        "amount": 0.08,
-        "currency": "SOL",
-        "estimatedUsd": 14.4
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 95
-    },
-    {
-      "id": 6629210052,
-      "number": 149,
-      "repoFullName": "Rohank143/BountyScout",
-      "title": "🎯 Bounty Alert: 8 New Opportunityies found",
-      "url": "https://github.com/Rohank143/BountyScout/issues/149",
-      "labels": [
-        "bounty-alert"
-      ],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 0,
-      "createdAt": "2026-11-26T14:50:36Z",
+      "ageDays": 0.3,
+      "createdAt": "2026-11-26T17:24:11Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 93
     },
     {
-      "id": 6617499507,
-      "number": 108,
-      "repoFullName": "tradermarketcap/tradermarketcap-open",
-      "title": "Supply rule for Official Trump (TRUMP)",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/108",
-      "labels": [
-        "bounty",
-        "open",
-        "locked-wallets"
-      ],
-      "comments": 1,
+      "id": 5442500934,
+      "number": 1,
+      "repoFullName": "immanueltella-web/quantum-media-os.",
+      "title": "💷 XOOL Penniless Agent — first £1 target",
+      "url": "https://github.com/immanueltella-web/quantum-media-os./issues/1",
+      "labels": [],
+      "comments": 0,
       "hasAssignee": false,
-      "ageDays": 0.6,
-      "createdAt": "2026-11-26T01:35:08Z",
-      "reward": null,
+      "ageDays": 74.2,
+      "createdAt": "2026-09-13T20:11:52Z",
+      "reward": {
+        "raw": "2 USDC",
+        "amount": 2,
+        "currency": "USDC",
+        "estimatedUsd": 2
+      },
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 87
+      "winnabilityScore": 88
     },
     {
-      "id": 6617499137,
-      "number": 107,
-      "repoFullName": "tradermarketcap/tradermarketcap-open",
-      "title": "Supply rule for LayerZero (ZRO)",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/107",
+      "id": 6610258605,
+      "number": 5811,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5811",
       "labels": [
-        "bounty",
-        "open",
-        "locked-wallets"
-      ],
-      "comments": 1,
-      "hasAssignee": false,
-      "ageDays": 0.6,
-      "createdAt": "2026-11-26T01:35:07Z",
-      "reward": null,
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 87
-    },
-    {
-      "id": 6617501033,
-      "number": 112,
-      "repoFullName": "tradermarketcap/tradermarketcap-open",
-      "title": "Supply rule for MANTRA (MANTRA)",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/112",
-      "labels": [
-        "bounty",
-        "open",
-        "native-chain"
+        "ready",
+        "bounty"
       ],
       "comments": 2,
       "hasAssignee": false,
-      "ageDays": 0.6,
-      "createdAt": "2026-11-26T01:35:16Z",
+      "ageDays": 1.3,
+      "createdAt": "2026-11-25T17:42:53Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 87
+    },
+    {
+      "id": 6433369160,
+      "number": 17,
+      "repoFullName": "hanzoai/hips",
+      "title": "[HIP-1347] Umbrella Research Bounties: Event-Driven Agent Reliability",
+      "url": "https://github.com/hanzoai/hips/issues/17",
+      "labels": [
+        "bounty",
+        "research"
+      ],
+      "comments": 2,
+      "hasAssignee": false,
+      "ageDays": 10.1,
+      "createdAt": "2026-11-16T23:45:21Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 82
+    },
+    {
+      "id": 6414433476,
+      "number": 10,
+      "repoFullName": "zoo-apps/papers",
+      "title": "Decentralized experience ledger",
+      "url": "https://github.com/zoo-apps/papers/issues/10",
+      "labels": [
+        "help wanted",
+        "bounty",
+        "flagship",
+        "p0",
+        "research",
+        "thinking-chains",
+        "hip-1352"
+      ],
+      "comments": 1,
+      "hasAssignee": false,
+      "ageDays": 10.8,
+      "createdAt": "2026-11-16T04:51:52Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 82
+    },
+    {
+      "id": 6400821184,
+      "number": 4998,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 4 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/4998",
+      "labels": [
+        "ready",
+        "bounty"
+      ],
+      "comments": 1,
+      "hasAssignee": false,
+      "ageDays": 11.8,
+      "createdAt": "2026-11-15T06:22:46Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 82
     },
     {
       "id": 6388280338,
@@ -178,7 +133,7 @@
       "labels": [],
       "comments": 0,
       "hasAssignee": false,
-      "ageDays": 12.3,
+      "ageDays": 12.6,
       "createdAt": "2026-11-14T09:43:16Z",
       "reward": null,
       "isHoneypot": false,
@@ -186,38 +141,11 @@
       "winnabilityScore": 82
     },
     {
-      "id": 6592038930,
-      "number": 7,
+      "id": 6592647941,
+      "number": 9,
       "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
-      "labels": [
-        "help wanted",
-        "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
-      ],
-      "comments": 8,
-      "hasAssignee": false,
-      "ageDays": 1.8,
-      "createdAt": "2026-11-24T21:45:36Z",
-      "reward": {
-        "raw": "0.12 SOL",
-        "amount": 0.12,
-        "currency": "SOL",
-        "estimatedUsd": 21.6
-      },
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 79
-    },
-    {
-      "id": 6592038632,
-      "number": 6,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/6",
+      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/9",
       "labels": [
         "help wanted",
         "bounty",
@@ -227,13 +155,13 @@
       ],
       "comments": 7,
       "hasAssignee": false,
-      "ageDays": 1.8,
-      "createdAt": "2026-11-24T21:45:35Z",
+      "ageDays": 2.1,
+      "createdAt": "2026-11-24T22:26:22Z",
       "reward": {
-        "raw": "0.1 SOL",
-        "amount": 0.1,
+        "raw": "0.09 SOL",
+        "amount": 0.09,
         "currency": "SOL",
-        "estimatedUsd": 18
+        "estimatedUsd": 16.2
       },
       "isHoneypot": false,
       "honeypotReason": null,
@@ -252,9 +180,9 @@
         "zero-gas",
         "ai-agent"
       ],
-      "comments": 9,
+      "comments": 10,
       "hasAssignee": false,
-      "ageDays": 1.7,
+      "ageDays": 2.1,
       "createdAt": "2026-11-24T22:26:21Z",
       "reward": {
         "raw": "0.09 SOL",
@@ -267,31 +195,128 @@
       "winnabilityScore": 79
     },
     {
-      "id": 6590807910,
-      "number": 2,
-      "repoFullName": "incidere/solana-agent-bounties",
-      "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing",
-      "url": "https://github.com/incidere/solana-agent-bounties/issues/2",
+      "id": 6617499507,
+      "number": 108,
+      "repoFullName": "tradermarketcap/tradermarketcap-open",
+      "title": "Supply rule for Official Trump (TRUMP)",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/108",
       "labels": [
-        "help wanted",
         "bounty",
-        "solana",
-        "zero-gas",
-        "ai-agent"
+        "open",
+        "locked-wallets"
       ],
-      "comments": 7,
+      "comments": 3,
       "hasAssignee": false,
-      "ageDays": 1.8,
-      "createdAt": "2026-11-24T20:30:24Z",
-      "reward": {
-        "raw": "0.06 SOL",
-        "amount": 0.06,
-        "currency": "SOL",
-        "estimatedUsd": 10.8
-      },
+      "ageDays": 1,
+      "createdAt": "2026-11-26T01:35:08Z",
+      "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 79
+    },
+    {
+      "id": 6610260980,
+      "number": 5812,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5812",
+      "labels": [
+        "ready",
+        "bounty"
+      ],
+      "comments": 3,
+      "hasAssignee": false,
+      "ageDays": 1.3,
+      "createdAt": "2026-11-25T17:43:01Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 79
+    },
+    {
+      "id": 6610258372,
+      "number": 5810,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5810",
+      "labels": [
+        "ready",
+        "bounty"
+      ],
+      "comments": 3,
+      "hasAssignee": false,
+      "ageDays": 1.3,
+      "createdAt": "2026-11-25T17:42:52Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 79
+    },
+    {
+      "id": 6179620402,
+      "number": 574,
+      "repoFullName": "auscaster/frantic-board",
+      "title": "Frantic bounty #145: Install NitroMTA and send one real email to proof@nitromta.com",
+      "url": "https://github.com/auscaster/frantic-board/issues/574",
+      "labels": [
+        "funded",
+        "accepted",
+        "paid"
+      ],
+      "comments": 3,
+      "hasAssignee": false,
+      "ageDays": 23.7,
+      "createdAt": "2026-11-03T09:15:46Z",
+      "reward": {
+        "raw": "$2",
+        "amount": 2,
+        "currency": "USD",
+        "estimatedUsd": 2
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 76
+    },
+    {
+      "id": 3506945623,
+      "number": 5066,
+      "repoFullName": "devpool-directory/devpool-directory",
+      "title": "Cow Swap Cash Out",
+      "url": "https://github.com/devpool-directory/devpool-directory/issues/5066",
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Price: 600 USD",
+        "Time: <1 Week"
+      ],
+      "comments": 4,
+      "hasAssignee": false,
+      "ageDays": 410.6,
+      "createdAt": "2025-10-12T10:41:15Z",
+      "reward": {
+        "raw": "$600",
+        "amount": 600,
+        "currency": "USD",
+        "estimatedUsd": 600
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 69
+    },
+    {
+      "id": 6390307468,
+      "number": 1606,
+      "repoFullName": "paraloom-labs/paraloom-core",
+      "title": "[BOUNTY] High: reconcile_validators deadlocks on pre-dual-stake 72-byte ValidatorRegistry (AccountDidNotDeserialize in Step 2 before Step 3 reset), admits non-canonical PDAs in decode, and exits 0 on invariant mismatch",
+      "url": "https://github.com/paraloom-labs/paraloom-core/issues/1606",
+      "labels": [],
+      "comments": 5,
+      "hasAssignee": false,
+      "ageDays": 12.5,
+      "createdAt": "2026-11-14T13:04:15Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 68
     },
     {
       "id": 6617499778,
@@ -304,94 +329,97 @@
         "open",
         "native-chain"
       ],
-      "comments": 4,
+      "comments": 7,
       "hasAssignee": false,
-      "ageDays": 0.6,
+      "ageDays": 1,
       "createdAt": "2026-11-26T01:35:10Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 79
+      "winnabilityScore": 63
     },
     {
-      "id": 6433336421,
-      "number": 65,
-      "repoFullName": "hanzoai/vfs",
-      "title": "[Bounty #8] Transparent FUSE daemon recovery · visor (Ananke)",
-      "url": "https://github.com/hanzoai/vfs/issues/65",
+      "id": 6610264123,
+      "number": 5813,
+      "repoFullName": "Ikalus1988/MisakaNet",
+      "title": "[Bounty] Answer the 2 linked question(s)",
+      "url": "https://github.com/Ikalus1988/MisakaNet/issues/5813",
       "labels": [
-        "help wanted",
-        "research",
-        "visor",
+        "ready",
         "bounty"
-      ],
-      "comments": 3,
-      "hasAssignee": false,
-      "ageDays": 9.7,
-      "createdAt": "2026-11-16T23:43:02Z",
-      "reward": null,
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 74
-    },
-    {
-      "id": 6433333066,
-      "number": 60,
-      "repoFullName": "hanzoai/vfs",
-      "title": "[Bounty #3] Grouped checkpoint IO · vfs / s3 (AITURBO)",
-      "url": "https://github.com/hanzoai/vfs/issues/60",
-      "labels": [
-        "help wanted",
-        "perf",
-        "research",
-        "bounty"
-      ],
-      "comments": 3,
-      "hasAssignee": false,
-      "ageDays": 9.7,
-      "createdAt": "2026-11-16T23:42:47Z",
-      "reward": null,
-      "isHoneypot": false,
-      "honeypotReason": null,
-      "winnabilityScore": 74
-    },
-    {
-      "id": 6433331534,
-      "number": 58,
-      "repoFullName": "hanzoai/vfs",
-      "title": "[Bounty #1] Partial-write absorption · vfs (WSBuffer)",
-      "url": "https://github.com/hanzoai/vfs/issues/58",
-      "labels": [
-        "help wanted",
-        "perf",
-        "research",
-        "bounty",
-        "wave-1"
       ],
       "comments": 6,
       "hasAssignee": false,
-      "ageDays": 9.7,
-      "createdAt": "2026-11-16T23:42:41Z",
+      "ageDays": 1.3,
+      "createdAt": "2026-11-25T17:43:13Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
-      "winnabilityScore": 58
+      "winnabilityScore": 63
     },
     {
-      "id": 6584619644,
-      "number": 297,
-      "repoFullName": "Ayush441-python/AUREN",
-      "title": "[Bug Bounty] /risk classifies USDC-USD/PYUSD-USD stablecoin pairs as Crypto — 100% cash gets -40% crypto-crash stress and a false +15 sector penalty",
-      "url": "https://github.com/Ayush441-python/AUREN/issues/297",
+      "id": 6617909013,
+      "number": 3,
+      "repoFullName": "AIK6667/news-image-20261125",
+      "title": "[OPS] 七天免费参赛试验｜双路线、资格闸门、额度与收益",
+      "url": "https://github.com/AIK6667/news-image-20261125/issues/3",
       "labels": [],
       "comments": 6,
       "hasAssignee": false,
-      "ageDays": 2,
-      "createdAt": "2026-11-24T14:55:06Z",
+      "ageDays": 1,
+      "createdAt": "2026-11-26T02:06:31Z",
       "reward": null,
       "isHoneypot": false,
       "honeypotReason": null,
       "winnabilityScore": 57
+    },
+    {
+      "id": 1092255850,
+      "number": 2004,
+      "repoFullName": "FreezingMoon/AncientBeast",
+      "title": "ability unit targeting tweaks [bounty: 15 XTR]",
+      "url": "https://github.com/FreezingMoon/AncientBeast/issues/2004",
+      "labels": [
+        "coding",
+        "visuals",
+        "abilities",
+        "input",
+        "bounty"
+      ],
+      "comments": 7,
+      "hasAssignee": false,
+      "ageDays": 1788.8,
+      "createdAt": "2022-01-03T06:20:14Z",
+      "reward": {
+        "raw": "15 XTR",
+        "amount": 15,
+        "currency": "XTR",
+        "estimatedUsd": 0.75
+      },
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 49
+    },
+    {
+      "id": 4084306250,
+      "number": 10781,
+      "repoFullName": "QubesOS/qubes-issues",
+      "title": "File copy via clipboard",
+      "url": "https://github.com/QubesOS/qubes-issues/issues/10781",
+      "labels": [
+        "ux",
+        "C: gui-domain",
+        "P: default",
+        "bounty"
+      ],
+      "comments": 8,
+      "hasAssignee": false,
+      "ageDays": 255.3,
+      "createdAt": "2026-03-16T19:13:05Z",
+      "reward": null,
+      "isHoneypot": false,
+      "honeypotReason": null,
+      "winnabilityScore": 33
     }
   ]
 }
