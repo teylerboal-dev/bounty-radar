@@ -27,20 +27,19 @@ GITHUB_TOKEN=your_token node bin/bounty-radar.mjs --query "bounty USDC" --json
 
 ## Live Top 10 Winnable Bounties (Auto-Updated 24/7)
 <!-- BOUNTY_FEED_START -->
-> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-27T15:45:00.843Z` · Scanned **46** issues, blocked **11** honeypots.
+> Auto-updated every 6 hours via GitHub Actions · Last scan: `2026-11-28T00:48:09.008Z` · Scanned **39** issues, blocked **13** honeypots.
 
 | Score | Reward | Repository | Issue | Comments |
 | ---: | :--- | :--- | :--- | ---: |
-| 100 | **$100** | `Tgentic/TGENTIC` | [#1 Call for security review — contracts, gate, SDKs](https://github.com/Tgentic/TGENTIC/issues/1) | 2 |
-| 93 | Unpriced | `hanzoai/gui` | [#21 [Intern] Keyboard navigation, focus-ring & WCAG AA accessibility audit on core](https://github.com/hanzoai/gui/issues/21) | 0 |
-| 93 | Unpriced | `hanzoai/chat` | [#3 [Intern] Static SPA build against local `hanzoai/engine` + Playwright streamin](https://github.com/hanzoai/chat/issues/3) | 0 |
-| 91 | **$125** | `Ayush441-python/AUREN` | [#192 [Bug Bounty] Wallet import returns 502 for a valid Base address](https://github.com/Ayush441-python/AUREN/issues/192) | 5 |
-| 88 | **1 USDC** | `immanueltella-web/quantum-media-os.` | [#1 💷 XOOL Penniless Agent — first £1 target](https://github.com/immanueltella-web/quantum-media-os./issues/1) | 0 |
-| 87 | Unpriced | `hanzoai/post` | [#21 [Intern] Social publishing scheduler timezone & media validation unit tests](https://github.com/hanzoai/post/issues/21) | 1 |
-| 87 | Unpriced | `hanzoai/extension` | [#30 [Intern] Browser extension (Chrome/Firefox/Edge) + VS Code `.vsix` build & ZAP](https://github.com/hanzoai/extension/issues/30) | 1 |
-| 87 | Unpriced | `hanzoai/docs` | [#26 [Intern] Copy-paste audit of Getting Started, Self-Hosting, Mobile, Desktop & ](https://github.com/hanzoai/docs/issues/26) | 1 |
-| 87 | Unpriced | `hanzoai/kv` | [#15 [Intern] Clean source build, Redis-CLI smoke matrix & baseline throughput benc](https://github.com/hanzoai/kv/issues/15) | 2 |
-| 87 | Unpriced | `paraspell/xcm-tools` | [#2699 [Bug bounty] findAssetInfo silently picks a different asset when symbol case d](https://github.com/paraspell/xcm-tools/issues/2699) | 0 |
+| 94 | **$10,000** | `Ayush441-python/AUREN` | [#274 [Bug Bounty] Editing portfolio size during analysis leaves preset and custom s](https://github.com/Ayush441-python/AUREN/issues/274) | 5 |
+| 87 | Unpriced | `hanzoai/mobile` | [#2 [Intern] Android APK/ADB & iOS Xcode USB end-to-end install and UX QA](https://github.com/hanzoai/mobile/issues/2) | 1 |
+| 87 | Unpriced | `hanzoai/post` | [#21 [Intern] Social publishing scheduler timezone & media validation unit tests](https://github.com/hanzoai/post/issues/21) | 2 |
+| 87 | Unpriced | `hanzoai/docs` | [#26 [Intern] Copy-paste audit of Getting Started, Self-Hosting, Mobile, Desktop & ](https://github.com/hanzoai/docs/issues/26) | 2 |
+| 87 | Unpriced | `hanzoai/billing` | [#1 [Intern] Plans, invoices & usage dashboard mock-API test suite](https://github.com/hanzoai/billing/issues/1) | 2 |
+| 87 | Unpriced | `hanzoai/gui` | [#21 [Intern] Keyboard navigation, focus-ring & WCAG AA accessibility audit on core](https://github.com/hanzoai/gui/issues/21) | 1 |
+| 79 | Unpriced | `hanzoai/ui` | [#337 [Intern] Verify `@hanzo/ui` tree-shaking, React 19 / Next.js static export & S](https://github.com/hanzoai/ui/issues/337) | 4 |
+| 79 | Unpriced | `hanzoai/python-sdk` | [#55 [Intern] Quickstart, async streaming & MCP/IAM example verification on Python ](https://github.com/hanzoai/python-sdk/issues/55) | 3 |
+| 78 | **$30,000** | `Ayush441-python/AUREN` | [#241 [Bug Bounty] Wallet import rounds a positive holding to zero and /risk rejects](https://github.com/Ayush441-python/AUREN/issues/241) | 6 |
 <!-- BOUNTY_FEED_END -->
 
 ## Run Tests
